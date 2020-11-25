@@ -1,0 +1,62 @@
+.hidden {
+	display: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+.rangeResponse {
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.response { display: inline; }
+
+.hint { font-style: italic; }
+
+sup { 
+    color: grey; 
+    font-size: .7rem;
+    margin-left: -3px;
+    margin-right: 5px;
+}
+
+.preLockDown {
+    border-bottom: 0.5px grey dotted;
+    display: inline;
+}
+
+.preLockDown .tooltip {
+    position: absolute;
+}
+
+.preLockDown:hover .tooltip {
+    display: block;
+}
+
+.tooltip {
+    display: none;
+    background-color: #e8e6e1;
+    padding: 3px 5px;
+    border-radius: 15px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -15%;
+}
