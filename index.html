@@ -11,24 +11,29 @@
 <body>
     <main>
         <section>
-
             <img width="100px" src="images/logo_2.svg">
         </section>
         <h1>London's Tech Sector Survey</h1>
         <p>Thank you for taking the time to participate in this survey!</p>
-           <p> The City of London and the Data Visualization program* at Fanshawe College have partnered on a project designed to provide a 'snapshot' of the London digital creative community, through a selection of relevant interactive visualizations and dashboards. The target is a Web application with a back end that could be used to continue to gather new and changing data in future. The information we are collecting in this phase will help shape the project as it develops.</p>
-
+           
+        <p> 
+            The City of London and the Data Visualization program* at Fanshawe College have partnered on a project designed to provide a 'snapshot' of the London digital creative community, through a selection of relevant interactive visualizations and dashboards. The target is a Web application with a back end that could be used to continue to gather new and changing data in future. The information we are collecting in this phase will help shape the project as it develops.
+            <br><br>    
             The City plans to collect and visualize this 
-            information about digital creative companies as they want to use the information as part of their planning activities, from selecting good locations for possible incubator spaces, to gather some insights into the digital creative industry moving out of the first COVID lockdown, to identifying actions to help support and grow the sector. Importantly, the information gathered will allow development of an application that can more fully represent the strength and breadth of the sector in London. The City wants this application to be a step towards better representation of London everywhere as a vital and growing tech hub.</p>
-        <br>
-        **** For questions related to COVID, for the purposes of this survey we have defined 3 time periods: ***pre, during, post lockdown lengths***<br>
-        **** The information collected in this study will be visualized at the company level for available demographic information (number of employees etc.) All other information pertaining to trends, employeee skill sets etc. will be presented in a summarized fashion, with no specific company or individual information. Any questions before we begin?***<br>
-            <form action="#">
+            information about digital creative companies as they want to use the information as part of their planning activities, from selecting good locations for possible incubator spaces, to gather some insights into the digital creative industry moving out of the first COVID lockdown, to identifying actions to help support and grow the sector. Importantly, the information gathered will allow development of an application that can more fully represent the strength and breadth of the sector in London. The City wants this application to be a step towards better representation of London everywhere as a vital and growing tech hub.
+            <br><br>
+            **** For questions related to COVID, for the purposes of this survey we have defined 3 time periods: ***pre, during, post lockdown lengths***
+            <br><br>
+            **** The information collected in this study will be visualized at the company level for available demographic information (number of employees etc.) All other information pertaining to trends, employeee skill sets etc. will be presented in a summarized fashion, with no specific company or individual information. Any questions before we begin?***
+            <br>
+        </p>
+        <form action="#">
          <h2>General Company Information</h2>
             <label for="cname">Company</label>
             <input type="text" id="cname" name="cname" placeholder="Company"> 
             <label for="sname">Survey Sector</label>
-            <input type="text" id="sname" name="sname" placeholder="Sector">             <label for="sname">Sector</label>
+            <input type="text" id="sname" name="sname" placeholder="Sector">             
+            <label for="sname">Sector</label>
             <label for="cdesc">Company Description</label>
             <input type="text" id="cdesc" name="cdesc" placeholder="marketing agency, video production"><br>
             <br>
@@ -183,26 +188,25 @@
                 <section id="graphic-design">
                     <label onclick="changeValueSeven()">
                    <input id="graphic-design-drop" name="prefer" value="graphic-design" type="checkbox" class="input-checkbox"/>
-                   Graphic Designer</label
-      ></section>
+                   Graphic Designer</label>
+                </section>
 <br>
       <section id="drop_box_seven" class="hidden">
-      <label for="graphic-design">How many estimated skilled professionals work in this department?</label>
-                    <select name="graphic-design" id="graphic-design">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
-                </section>
-            </section>
-
+            <label for="graphic-design">How many estimated skilled professionals work in this department?</label>
+            <select name="graphic-design" id="graphic-design">
+                <option value="value_1">1</option>
+                <option value="value_2">2</option>
+                <option value="value_3">3</option>
+                <option value="value_4">4</option>
+                <option value="value_5">5</option>
+                <option value="value_6">6</option>
+                <option value="value_7">7</option>
+                <option value="value_8">8</option>
+                <option value="value_9">9</option>
+                <option value="value_10">10</option>
+            </select>
+        </section>
+    </section>
 
             <div id="formQ1">
                 <h2>1. What is the estimated current staff size of your company?</h2>
@@ -288,20 +292,17 @@
                 Additional notes/comments, if any 
             </textarea>
             <h2>4. Overall, was there any increase or decrease in staffing as a result of COVID at your company ?</h2>
+            <label for="slider_range_three">Increase in staffing:</label>
+            <section>
+                <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_three">
+                <p class="response" id="fill_in_three">%</p>
+            </section>
             <br>
-            <p>
-                Increase in staffing:
-            </p>
+            <label for="slider_range_four">Decrease in staffing:</label>
             <section>
-                <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_three">
-                <p><span id="fill_in_three"></span>%</p>
+                <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_four">
+                <p class="response" id="fill_in_four">%</p>
             </section>
-                Decrease in staffing:
-            <section>
-                <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_four">
-                <p><span id="fill_in_four"></span>%</p>
-            </section>
-
 
             <h2>5. Change in Job Demands and Hires</h2>
             <ol>
@@ -619,7 +620,6 @@
                     <input type="text" name="marketingskill3"><br>
                 </div>
 
-
             <div id="formQ7">
                 <h2>7. Office / Satellite Site Expansion</h2>
                 <div>
@@ -674,26 +674,24 @@
                 </div><br><br>
 <div>
     <h2>8. Recruiting Talent</h2>
-    8.1 What percentage of your skilled professionals are from London ?</h2>
-
-    <section class="london_slider">
-        <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_one">
-        <p><span id="fill_in_one"></span>%</p>
+    <label for="slider_range_one">8.1 What percentage of your skilled professionals are from London</label>
+    <section class="london_slider rangeResponse">
+        <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_one">
+        <p class="q1_response response" id="fill_in_one">%</p>
     </section>
     <br>
 
-    8.2 What percentage of your skilled professionals are from other countries ?
-
+    <label for="slider_range_two"> 8.2 What percentage of your skilled professionals are from other countries?</label>
     <section class="countries_slider">
-        <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_two">
-        <p><span id="fill_in_two"></span>%</p>
+        <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_two">
+        <p class="q1_response response" id="fill_in_two">%</p>
     </section>
 
     <br>
-                <label for="uni_col">What institutions are your early graduates coming from ?</label>
-                <input type="text" id="uni_col" name="uni_col" placeholder="University/College">
-                <br>
-                <br>
+            <label for="uni_col">What institutions are your early graduates coming from ?</label>
+            <input type="text" id="uni_col" name="uni_col" placeholder="University/College">
+            <br>
+            <br>
             </div>
             </div>
             <h2>9. What new emerging tech do you currently see in the sector?</h2>
@@ -985,10 +983,9 @@
             <br>
             <li>
                 <label for="q8">
-                <div> Are there any additional comments you would like to make on  topics related to this survey?</div>
+                    Are there any additional comments you would like to make on  topics related to this survey?
                 </label>
             <br>
-
                 <textarea id="q8" name="q8" rows="10" cols ="100">
                     Additional Comments
                 </textarea> 
@@ -997,7 +994,7 @@
             <br>
             <li>
                 <label for="q8">
-                <div> Are there any other companies, organizations or individuals you think we should contact for this project?</div>
+                    Are there any other companies, organizations or individuals you think we should contact for this project?
                 </label>
             <br>
 
