@@ -30,13 +30,16 @@
             <label for="cname">Company</label>
             <input type="text" id="cname" name="cname" placeholder="Company">
             <label for="sname">Survey Sector</label>
-            <input type="text" id="sname" name="sname" placeholder="Sector"> <label for="sname">Sector</label>
+            <input type="text" id="sname" name="sname" placeholder="Sector"> 
+            <br><br>
             <label for="cdesc">Company Description</label>
             <input type="text" id="cdesc" name="cdesc" placeholder="marketing agency, video production"><br>
             <br>
             <label for="lname">Contact Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="full name of contact">
-            <label for="role">Role</label>
+            <label for="email">Contact Email</label>
+            <input type="email" id="email" name="email" placeholder="contact email">
+            <label for="role">Contact Role</label>
             <input type="text" id="role" name="role" placeholder="company role">
             <br>
 
@@ -90,12 +93,12 @@
                     </select>
                 </section>
 
-
                 <section id="full-stack-drop">
                     <label onclick="changeValueThree()">
                         <input id="full-stack-drop" name="prefer" value="full-stack" type="checkbox"
                             class="input-checkbox" />
-                        Full-Stack Developer</label></section>
+                        Full-Stack Developer</label>
+                </section>
                 <br>
                 <section id="drop_box_three" class="hidden">
                     <label for="full-stack">How many estimated skilled professionals work in this department?</label>
@@ -294,10 +297,7 @@
 
             <!-- #4 question -->
             <h2>4. Overall, was there any increase or decrease in staffing as a result of COVID at your company ?</h2>
-            <br>
-            <p>
-                Increase in staffing:
-            </p>
+            <p>Increase in staffing:</p>
             <div class="rangeResponse">
                 <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
                 <datalist id="percentages">
@@ -315,7 +315,7 @@
                 </datalist>
                 <p class="q1_response response">%</p>
             </div>
-            Decrease in staffing:
+            <p>Decrease in staffing:</p>
             <div class="rangeResponse">
                 <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
                 <datalist id="percentages">
@@ -801,6 +801,7 @@
             <div>
                 <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual
                     selections)</label>
+                <br><br>
                 <select multiple class="form-control" id="sel2">
                     <option>Machine Learning</option>
                     <option>IT Auditing</option>
@@ -811,6 +812,7 @@
                 <div class="form-group">
                     <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual
                         selections)</label>
+                    <br><br>
                     <select multiple class="form-control" id="sel2">
                         <option>Software Engineer</option>
                         <option>Machine Learning</option>
@@ -1113,8 +1115,7 @@
                 <br>
                 <li>
                     <label for="q8">
-                        <div> Are there any additional comments you would like to make on topics related to this survey?
-                        </div>
+                        Are there any additional comments you would like to make on topics related to this survey?
                     </label>
                     <br>
 
@@ -1126,8 +1127,7 @@
                 <br>
                 <li>
                     <label for="q8">
-                        <div> Are there any other companies, organizations or individuals you think we should contact
-                            for this project?</div>
+                        Are there any other companies, organizations or individuals you think we should contact for this project?
                     </label>
                     <br>
                     <div class="more-margin">
