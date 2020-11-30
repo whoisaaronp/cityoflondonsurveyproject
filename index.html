@@ -312,63 +312,58 @@
                 <input type="text" name="role6-skill3"><br>
             </section>
 
-            <div id="formQ1">
-                <h2>1. What is the estimated current staff size of your company?</h2>
-                <input type="checkbox" id="q1o1" name="q1o1">
-                <label for="q1o1">0 - 25</label>
-                <input type="checkbox" id="q1o2" name="q1o2">
-                <label for="q1o2">26 - 50</label>
-                <input type="checkbox" id="q1o3" name="q1o3">
-                <label for="q1o3">51 - 99</label>
-                <input type="checkbox" id="q1o4" name="q1o4">
-                <label for="q1o4">100 - 230</label>
-                <input type="checkbox" id="q1o5" name="q1o5">
-                <label for="q1o5">231 - 360</label>
-                <input type="checkbox" id="q1o6" name="q1o6">
-                <label for="q1o6">361 - 499</label>
-                <input type="checkbox" id="q1o7" name="q1o7">
-                <label for="q1o7">500 or More</label>
-            </div>
-
-            <div id="formQ1Sub1">
-                <p>1.1 On Average what is the current staff size by department?</p>
-
-                <div>
-                    <button>Add New Field &nbsp;
-                        <span style="font-size:16px; font-weight:bold;">+ </span>
-                    </button>
+                <!-- Cindys Questions  -->
+            <section>
+                <h2 class="hidden">staff size questions</h2>
+                <div id="formQ1">
+                    <h2>1. What is the estimated current staff size of your company?</h2>
                     <div>
-                        <label for="mytext">Department Name:</label>
-                        <input type="text" name="mytext[]" id="department1" minlength="5" maxlength="24" size="26" spellcheck="true">
-                        <label for="emploNum"></label>
-                        <select name="emploNum" id="emploNum">
-                            <option value="0-10">0-5</option>
-                            <option value="11-20">6-10</option>
-                            <option value="21-40">10-20</option>
-                            <option value="100-230">21-30</option>
-                            <option value="231-360">31-40</option>
-                            <option value="261-499">41 or more</option>
-                        </select>
+                      <input type="radio" id="q1o1" name="q1" value="0-25">
+                      <label for="q1o1">0 - 25</label>
                     </div>
+                    <div>
+                    <input type="radio" id="q1o2" name="q1" value="26-50">
+                    <label for="q1o2">26 - 50</label></div>
+                    <div>
+
+                    <input type="radio" id="q1o3" name="q1" value="51-99">
+                    <label for="q1o3">51 - 99</label></div>
+                    <div>
+                    <input type="radio" id="q1o4" name="q1" value="100-230">
+                    <label for="q1o4">100 - 230</label></div>
+                    <div>
+                    <input type="radio" id="q1o5" name="q1" value="231-360">
+                    <label for="q1o5">231 - 360</label></div>
+                    <div>
+                    <input type="radio" id="q1o6" name="q1" value="361-499">
+                    <label for="q1o6">361 - 499</label></div>
+                    <div>
+                    <input type="radio" id="q1o7" name="q1" value="500">
+                    <label for="q1o7">500 or More</label></div>
+
                 </div>
+
+                
                 <div id="formQ2">
                     <h2>2. What is the projected staff size growth for your company over the next year?</h2>
-                    <input type="checkbox" id="q2o1" name="q2o1">
-                    <label for="q2o1">None</label>
-                    <input type="checkbox" id="q2o2" name="q2o2">
-                    <label for="q2o2">1 - 9%</label>
-                    <input type="checkbox" id="q2o3" name="q2o3">
-                    <label for="q1o3">10 - 24%</label>
-                    <input type="checkbox" id="q2o4" name="q2o4">
-                    <label for="q1o4">25 - 49%</label>
-                    <input type="checkbox" id="q2o5" name="q2o5">
-                    <label for="q1o5">50 - 74%</label>
-                    <input type="checkbox" id="q2o6" name="q2o6">
-                    <label for="q1o6">75 - 100%</label>
-                    <input type="checkbox" id="q2o7" name="q2o7">
+                    <input type="radio" id="q2o1" name="q2" value="none">
+                    <label for="q2o1">None</label><br>
+                    <input type="radio" id="q2o2" name="q2" value="1-9">
+                    <label for="q2o2">1 - 9%</label><br>
+                    <input type="radio" id="q2o3" name="q2" value="10-24">
+                    <label for="q1o3">10 - 24%</label><br>
+                    <input type="radio" id="q2o4" name="q2" value="25-49">
+                    <label for="q1o4">25 - 49%</label><br>
+                    <input type="radio" id="q2o5" name="q2" value="50-74">
+                    <label for="q1o5">50 - 74%</label><br>
+                    <input type="radio" id="q2o6" name="q2" value="75-100">
+                    <label for="q1o6">75 - 100%</label><br>
+                    <input type="radio" id="q2o7" name="q2" value="100">
                     <label for="q1o7">Greater than 100%</label>
                 </div>
-            </div>
+
+            </section>
+           
             <h2>3. How has the impact of Covid-19 affected your companies hiring trends?</h2>
             <section class="form-container">
                 <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
