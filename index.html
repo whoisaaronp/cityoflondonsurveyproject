@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>London Tech Sector Survey</title>
@@ -11,202 +12,200 @@
 <body>
     <main>
         <section>
+
             <img width="100px" src="images/logo_2.svg">
         </section>
         <h1>London's Tech Sector Survey</h1>
         <p>Thank you for taking the time to participate in this survey!</p>
-           
-        <p> 
-            The City of London and the Data Visualization program* at Fanshawe College have partnered on a project designed to provide a 'snapshot' of the London digital creative community, through a selection of relevant interactive visualizations and dashboards. The target is a Web application with a back end that could be used to continue to gather new and changing data in future. The information we are collecting in this phase will help shape the project as it develops.
-            <br><br>    
-            The City plans to collect and visualize this 
-            information about digital creative companies as they want to use the information as part of their planning activities, from selecting good locations for possible incubator spaces, to gather some insights into the digital creative industry moving out of the first COVID lockdown, to identifying actions to help support and grow the sector. Importantly, the information gathered will allow development of an application that can more fully represent the strength and breadth of the sector in London. The City wants this application to be a step towards better representation of London everywhere as a vital and growing tech hub.
-            <br><br>
-            **** For questions related to COVID, for the purposes of this survey we have defined 3 time periods: ***pre, during, post lockdown lengths***
-            <br><br>
-            **** The information collected in this study will be visualized at the company level for available demographic information (number of employees etc.) All other information pertaining to trends, employeee skill sets etc. will be presented in a summarized fashion, with no specific company or individual information. Any questions before we begin?***
-            <br>
-        </p>
+        <p> The City of London and the Data Visualization program* at Fanshawe College have partnered on a project designed to provide a 'snapshot' of the London digital creative community, through a selection of relevant interactive visualizations and dashboards.
+            The target is a Web application with a back end that could be used to continue to gather new and changing data in future. The information we are collecting in this phase will help shape the project as it develops.</p>
+
+        <p>The City plans to collect and visualize this information about digital creative companies as they want to use the information as part of their planning activities, from selecting good locations for possible incubator spaces, to gather some insights
+            into the digital creative industry moving out of the first COVID lockdown, to identifying actions to help support and grow the sector. Importantly, the information gathered will allow development of an application that can more fully represent
+            the strength and breadth of the sector in London. The City wants this application to be a step towards better representation of London everywhere as a vital and growing tech hub.</p>
+        <br> **** For questions related to COVID, for the purposes of this survey we have defined 3 time periods: ***pre, during, post lockdown lengths***<br> **** The information collected in this study will be visualized at the company level for available
+        demographic information (number of employees etc.) All other information pertaining to trends, employeee skill sets etc. will be presented in a summarized fashion, with no specific company or individual information. Any questions before we begin?***</p><br>
         <form action="#">
-         <h2>General Company Information</h2>
+            <h2>General Company Information</h2>
             <label for="cname">Company</label>
-            <input type="text" id="cname" name="cname" placeholder="Company"> 
+            <input type="text" id="cname" name="cname" placeholder="Company">
             <label for="sname">Survey Sector</label>
-            <input type="text" id="sname" name="sname" placeholder="Sector">             
-            <label for="sname">Sector</label>
+            <input type="text" id="sname" name="sname" placeholder="Sector"> <label for="sname">Sector</label>
             <label for="cdesc">Company Description</label>
             <input type="text" id="cdesc" name="cdesc" placeholder="marketing agency, video production"><br>
             <br>
-            <label for="lname">Contact Name</label> 
+            <label for="lname">Contact Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="full name of contact">
-            <label for="role">Contact Role</label> 
+            <label for="role">Role</label>
             <input type="text" id="role" name="role" placeholder="company role">
-            <label for="email">Contact Email</label> 
-            <input type="email" id="email" name="email" placeholder="contact email">
             <br>
 
             <section class="multiple_check">
                 <h2>Which roles are represented in your company?</h2>
-                <textarea name="q5_5_notes" id="q5_5_notes" cols="100" rows="2">
-                    Additional notes/comments, if any 
-                </textarea>
+                <div class="more-margin">
+                    <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                </div>
                 <section id="front-end-drop">
                     <label onclick="changeValueOne()">
-                   <input id="front-end-drop" name="prefer" value="front-end" type="checkbox" class="input-checkbox"/>
-                   Front-end Developer</label><br><br>
-                   <label for="q5_5_notes" class="hidden">additional notes</label>
-      </section>
-      <section id="drop_box" class="hidden">
-      <label for="front-end">How many estimated skilled professionals work in this department?</label>
+                        <input id="front-end-drop" name="prefer" value="front-end" type="checkbox"
+                            class="input-checkbox" />
+                        Front-end Developer</label><br><br>
+                    <label for="q5_5_notes" class="hidden">additional notes</label>
+                </section>
+                <section id="drop_box" class="hidden">
+                    <label for="front-end">How many estimated skilled professionals work in this department?</label>
                     <select name="front-end" id="front-end">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
 
                 <section id="back-end-drop">
                     <label onclick="changeValueTwo()">
-                   <input id="back-end-drop" name="prefer" value="back-end" type="checkbox" class="input-checkbox"/>
-                   Back-end Developer</label
-      ></section>
-<br>
-      <section id="drop_box_two" class="hidden">
-      <label for="back-end">How many estimated skilled professionals work in this department?</label>
+                        <input id="back-end-drop" name="prefer" value="back-end" type="checkbox"
+                            class="input-checkbox" />
+                        Back-end Developer</label></section>
+                <br>
+                <section id="drop_box_two" class="hidden">
+                    <label for="back-end">How many estimated skilled professionals work in this department?</label>
                     <select name="back-end" id="back-end">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
 
 
                 <section id="full-stack-drop">
                     <label onclick="changeValueThree()">
-                   <input id="full-stack-drop" name="prefer" value="full-stack" type="checkbox" class="input-checkbox"/>
-                   Full-Stack Developer</label
-      ></section>
-<br>
-      <section id="drop_box_three" class="hidden">
-      <label for="full-stack">How many estimated skilled professionals work in this department?</label>
+                        <input id="full-stack-drop" name="prefer" value="full-stack" type="checkbox"
+                            class="input-checkbox" />
+                        Full-Stack Developer</label></section>
+                <br>
+                <section id="drop_box_three" class="hidden">
+                    <label for="full-stack">How many estimated skilled professionals work in this department?</label>
                     <select name="full-stack" id="full-stack">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
 
 
                 <section id="data-vis">
                     <label onclick="changeValueFour()">
-                   <input id="data-vis-drop" name="prefer" value="data-vis" type="checkbox" class="input-checkbox"/>
-                   Data Visualization</label
-      ></section>
-<br>
-      <section id="drop_box_four" class="hidden">
-      <label for="data-vis">How many estimated skilled professionals work in this department?</label>
+                        <input id="data-vis-drop" name="prefer" value="data-vis" type="checkbox"
+                            class="input-checkbox" />
+                        Data Visualization</label></section>
+                <br>
+                <section id="drop_box_four" class="hidden">
+                    <label for="data-vis">How many estimated skilled professionals work in this department?</label>
                     <select name="data-vis" id="data-vis">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
 
 
                 <section id="cyber-security">
                     <label onclick="changeValueFive()">
-                   <input id="cyber-security-drop" name="prefer" value="cyber-security" type="checkbox" class="input-checkbox"/>
-                   Cyber Security</label
-      ></section>
-<br>
-      <section id="drop_box_five" class="hidden">
-      <label for="cyber-security">How many estimated skilled professionals work in this department?</label>
+                        <input id="cyber-security-drop" name="prefer" value="cyber-security" type="checkbox"
+                            class="input-checkbox" />
+                        Cyber Security</label></section>
+                <br>
+                <section id="drop_box_five" class="hidden">
+                    <label for="cyber-security">How many estimated skilled professionals work in this
+                        department?</label>
                     <select name="cyber-security" id="cyber-security">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
 
                 <section id="motion-design">
                     <label onclick="changeValueSix()">
-                   <input id="motion-design-drop" name="prefer" value="motion-design" type="checkbox" class="input-checkbox"/>
-                   Motion Designer</label
-      ></section>
-<br>
-      <section id="drop_box_six" class="hidden">
-      <label for="motion-design">How many estimated skilled professionals work in this department?</label>
+                        <input id="motion-design-drop" name="prefer" value="motion-design" type="checkbox"
+                            class="input-checkbox" />
+                        Motion Designer</label></section>
+                <br>
+                <section id="drop_box_six" class="hidden">
+                    <label for="motion-design">How many estimated skilled professionals work in this department?</label>
                     <select name="motion-design" id="motion-design">
-        <option value="value_1">1</option>
-        <option value="value_2">2</option>
-        <option value="value_3">3</option>
-        <option value="value_4">4</option>
-        <option value="value_5">5</option>
-        <option value="value_6">6</option>
-        <option value="value_7">7</option>
-        <option value="value_8">8</option>
-        <option value="value_9">9</option>
-        <option value="value_10">10</option>
-      </select>
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
 
                 <section id="graphic-design">
                     <label onclick="changeValueSeven()">
-                   <input id="graphic-design-drop" name="prefer" value="graphic-design" type="checkbox" class="input-checkbox"/>
-                   Graphic Designer</label>
+                        <input id="graphic-design-drop" name="prefer" value="graphic-design" type="checkbox"
+                            class="input-checkbox" />
+                        Graphic Designer</label></section>
+                <br>
+                <section id="drop_box_seven" class="hidden">
+                    <label for="graphic-design">How many estimated skilled professionals work in this
+                        department?</label>
+                    <select name="graphic-design" id="graphic-design">
+                        <option value="value_1">1</option>
+                        <option value="value_2">2</option>
+                        <option value="value_3">3</option>
+                        <option value="value_4">4</option>
+                        <option value="value_5">5</option>
+                        <option value="value_6">6</option>
+                        <option value="value_7">7</option>
+                        <option value="value_8">8</option>
+                        <option value="value_9">9</option>
+                        <option value="value_10">10</option>
+                    </select>
                 </section>
-<br>
-      <section id="drop_box_seven" class="hidden">
-            <label for="graphic-design">How many estimated skilled professionals work in this department?</label>
-            <select name="graphic-design" id="graphic-design">
-                <option value="value_1">1</option>
-                <option value="value_2">2</option>
-                <option value="value_3">3</option>
-                <option value="value_4">4</option>
-                <option value="value_5">5</option>
-                <option value="value_6">6</option>
-                <option value="value_7">7</option>
-                <option value="value_8">8</option>
-                <option value="value_9">9</option>
-                <option value="value_10">10</option>
-            </select>
-        </section>
-    </section>
+            </section>
+
 
             <div id="formQ1">
                 <h2>1. What is the estimated current staff size of your company?</h2>
@@ -228,10 +227,10 @@
 
             <div id="formQ1Sub1">
                 <p>1.1 On Average what is the current staff size by department?</p>
-                
+
                 <div>
-                    <button>Add New Field &nbsp; 
-                      <span style="font-size:16px; font-weight:bold;">+ </span>
+                    <button>Add New Field &nbsp;
+                        <span style="font-size:16px; font-weight:bold;">+ </span>
                     </button>
                     <div>
                         <label for="mytext">Department Name:</label>
@@ -265,50 +264,84 @@
                     <label for="q1o7">Greater than 100%</label>
                 </div>
             </div>
-            <h2>3. How has the impact Covid-19 of affected your companies hiring trends?</h2>
-
-			<label class="wrapper">Not Affected
-				<input type="radio" checked="checked" name="radio">
-				<span class="checkmark"></span>
-			</label>
-			<label class="wrapper">Less Affected
-				<input type="radio" name="radio">
-				<span class="checkmark"></span>
-			</label>
-			<label class="wrapper">Neither
-				<input type="radio" name="radio">
-				<span class="checkmark"></span>
-			</label>
-			<label class="wrapper">Moderately Affected
-				<input type="radio" name="radio">
-				<span class="checkmark"></span>
-			</label>
-			<label class="wrapper">Strongly Affected
-				<input type="radio" name="radio">
-				<span class="checkmark"></span>
-            </label>
+            <h2>3. How has the impact of Covid-19 affected your companies hiring trends?</h2>
+            <section class="form-container">
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">Negatively affected</label>
+                <br>
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">Somewhat Negatively affected</label>
+                <br>
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">Very Negatively affected</label>
+                <br>
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">I'm Neutral</label>
+                <br>
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">Positively affected</label>
+                <br>
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">Somewhat Positively affected</label>
+                <br>
+                <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
+                <label for="q5_1_less_3">Very Positively affected</label>
+            </section>
             <label for="q3_notes" class="hidden">additional notes</label>
-            <textarea name="q3_notes" id="q3_notes" cols="100" rows="2">
-                Additional notes/comments, if any 
-            </textarea>
+            <div class="more-margin">
+                <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+            </div>
+
+            <!-- #4 question -->
             <h2>4. Overall, was there any increase or decrease in staffing as a result of COVID at your company ?</h2>
-            <label for="slider_range_three">Increase in staffing:</label>
-            <section>
-                <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_three">
-                <p class="response" id="fill_in_three">%</p>
-            </section>
             <br>
-            <label for="slider_range_four">Decrease in staffing:</label>
-            <section>
-                <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_four">
-                <p class="response" id="fill_in_four">%</p>
-            </section>
+            <p>
+                Increase in staffing:
+            </p>
+            <div class="rangeResponse">
+                <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                <datalist id="percentages">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+                <p class="q1_response response">%</p>
+            </div>
+            Decrease in staffing:
+            <div class="rangeResponse">
+                <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                <datalist id="percentages">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+                <p class="q1_response response">%</p>
+            </div>
+
 
             <h2>5. Change in Job Demands and Hires</h2>
             <ol>
                 <li>
                     <label for="q5.1">
-                        How would you compare your company's current demand for hiring skilled team members with <div class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div> days?
+                        How would you compare your company's current demand for hiring skilled team members with <div
+                            class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4 months prior to
+                                the COVID-19 lockdown (around mid-March, 2020)</span></div> days?
                     </label>
                     <br>
                     <input type="radio" id="q5_1_less_3" name="q5.1" value="q5_1_less_3">
@@ -331,20 +364,23 @@
                     <br>
                     <input type="radio" id="q5_1_more_3" name="q5.1" value="q5_1_more_3">
                     <label for="q5_1_more_3">Much more</label>
-                    
+
                     <br>
                     <label for="q5_1_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_1_notes" id="q5_1_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
-                    
+
                 <br>
                 <li>
                     <label for="q5_2">
-                        Roughly how many <div class="preLockDown">unique <sup>?</sup><span class="tooltip">Unique per position, not posting medium. For instnace, one job posted on the company website and five other hiring websites is marked as 1.</span></div> 
-                        monthly positions has your company been posting <div class="preLockDown">pre-lockdown 
-                        <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div>?
+                        Roughly how many <div class="preLockDown">unique <sup>?</sup><span class="tooltip">Unique per
+                                position, not posting medium. For instnace, one job posted on the company website and
+                                five other hiring websites is marked as 1.</span></div>
+                        monthly positions has your company been posting <div class="preLockDown">pre-lockdown
+                            <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around
+                                mid-March, 2020)</span></div>?
                     </label>
                     <br>
                     <input type="range" value="0" id="q5_2" name="q5_2" min="0" max="25" list="job_posts" class="question">
@@ -360,17 +396,22 @@
 
                     <br>
                     <label for="q5_2_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_2_notes" id="q5_2_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
                     <label for="q5_2_2">
-                        Roughly how many <div class="preLockDown">unique <sup>?</sup><span class="tooltip">Unique per position, not posting medium. For instnace, one job posted on the company website and five other hiring websites is marked as 1.</span></div> 
-                        monthly positions has your company posted <div class="preLockDown">during lockdown 
-                        <sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020. It has lifted on <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca).</span></div>?
+                        Roughly how many <div class="preLockDown">unique <sup>?</sup><span class="tooltip">Unique per
+                                position, not posting medium. For instnace, one job posted on the company website and
+                                five other hiring websites is marked as 1.</span></div>
+                        monthly positions has your company posted <div class="preLockDown">during lockdown
+                            <sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020.
+                                It has lifted on <a href="https:
+                                    //www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca).</span>
+                        </div>?
                     </label>
                     <br>
                     <input type="range" value="0" id="q5_2_2" name="q5_2_2" min="0" max="25" list="job_posts" class="question">
@@ -386,32 +427,40 @@
 
                     <br>
                     <label for="q5_2_2_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_2_2_notes" id="q5_2_2_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
                     <label for="q5_3">
-                        Roughly how many <div class="preLockDown">unique <sup>?</sup><span class="tooltip">Unique per position, not posting medium. For instnace, one job posted on the company website and five other hiring websites is marked as 1.</span></div> 
-                        monthly positions has your company been posting <div class="preLockDown">post-lockdown 
-                        <sup>?</sup><span class="tooltip">during 4 months after COVID-19 lockdown-lift. The lift is marked by <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-4">Stage 3</a> lockdown lift, on <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca)</span></div>?
+                        Roughly how many <div class="preLockDown">unique <sup>?</sup><span class="tooltip">Unique per
+                                position, not posting medium. For instnace, one job posted on the company website and
+                                five other hiring websites is marked as 1.</span></div>
+                        monthly positions has your company been posting <div class="preLockDown">post-lockdown
+                            <sup>?</sup><span class="tooltip">during 4 months after COVID-19 lockdown-lift. The lift is
+                                marked by <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-4">Stage
+                                    3</a> lockdown lift, on <a
+                                    href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July,
+                                    2020</a> for London, ON (Source: ontario.ca)</span></div>?
                     </label>
                     <br>
                     <input type="range" value="0" id="q5_3" name="q5_3" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
-                    
+
                     <br>
                     <label for="q5_3_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_3_notes" id="q5_3_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
-                    <label for="q5_4">On average, how many applicants have applied per job position <div class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div>?</label>
+                    <label for="q5_4">On average, how many applicants have applied per job position <div
+                            class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4 months prior to
+                                the COVID-19 lockdown (around mid-March, 2020)</span></div>?</label>
                     <br>
                     <input type="radio" id="q5_4_1" name="q5_4" value="q5_4_1">
                     <label for="q5_4_1">0</label>
@@ -433,18 +482,22 @@
                     <br>
                     <input type="radio" id="q5_4_7" name="q5_4" value="q5_4_7">
                     <label for="q5_4_7">Over 500</label>
-                    
+
                     <br>
                     <label for="q5_4_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_4_notes" id="q5_4_notes" cols="100" rows="2">
-                        Additional notes/comments, if any (for instance, does the number of job applicants vary per job position?)
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
-                    <label for="q5_4_2">On average, how many applicants have applied per job position <div class="preLockDown">during lockdown 
-                    <sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020. It has lifted on <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca).</span></div>?</label>
+                    <label for="q5_4_2">On average, how many applicants have applied per job position <div
+                            class="preLockDown">during lockdown
+                            <sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020.
+                                It has lifted on <a href="https:
+                                    //www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca).</span>
+                        </div>?</label>
                     <br>
                     <input type="radio" id="q5_4_2_1" name="q5_4_2" value="q5_4_2_1">
                     <label for="q5_4_2_1">0</label>
@@ -466,17 +519,23 @@
                     <br>
                     <input type="radio" id="q5_4_2_7" name="q5_4_2" value="q5_4_2_7">
                     <label for="q5_4_2_7">Over 500</label>
-                    
+
                     <br>
                     <label for="q5_4_2_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_4_2_notes" id="q5_4_2_notes" cols="100" rows="2">
-                        Additional notes/comments, if any (for instance, does the number of job applicants vary per job position?)
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
-                
+
                 <br>
                 <li>
-                    <label for="q5_5">On average, how many applicants have applied per job position <div class="preLockDown"> post-lockdown <sup>?</sup><span class="tooltip">during 4 months after COVID-19 lockdown-lift. The lift is marked by <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-4">Stage 3</a> lockdown lift, on <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca)</span></div>?</label>
+                    <label for="q5_5">On average, how many applicants have applied per job position <div
+                            class="preLockDown"> post-lockdown <sup>?</sup><span class="tooltip">during 4 months after
+                                COVID-19 lockdown-lift. The lift is marked by <a
+                                    href="https://www.ontario.ca/page/reopening-ontario-stages#section-4">Stage 3</a>
+                                lockdown lift, on <a
+                                    href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July,
+                                    2020</a> for London, ON (Source: ontario.ca)</span></div>?</label>
                     <br>
                     <input type="radio" id="q5_5_1" name="q5_5" value="q5_5_1">
                     <label for="q5_5_1">0</label>
@@ -499,52 +558,62 @@
                     <input type="radio" id="q5_5_5" name="q5_5" value="q5_5_5">
                     <label for="q5_5_5">Over 500</label>
                     <br>
-                    
+
                     <label for="q5_5_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_5_notes" id="q5_5_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
                     <label for="q5_6">
-                        Roughly how many monthly hires has your company been making <div class="preLockDown">pre-lockdown 
-                        <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div>?
+                        Roughly how many monthly hires has your company been making <div class="preLockDown">
+                            pre-lockdown
+                            <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around
+                                mid-March, 2020)</span></div>?
                     </label>
                     <br>
                     <input type="range" value="0" id="q5_6" name="q5_6" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
-                    
+
                     <br>
                     <label for="q5_6_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_6_notes" id="q5_6_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
                     <label for="q5_6_2">
-                        Roughly how many monthly hires has your company been making <div class="preLockDown">during lockdown 
-                        <sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020. It has lifted on <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca).</span></div>?
+                        Roughly how many monthly hires has your company been making <div class="preLockDown">during
+                            lockdown
+                            <sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020.
+                                It has lifted on <a href="https:
+                                    //www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca).</span>
+                        </div>?
                     </label>
                     <br>
                     <input type="range" value="0" id="q5_6_2" name="q5_6_2" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
-                    
+
                     <br>
                     <label for="q5_6_2_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_6_2_notes" id="q5_6_2_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
                     <label for="q5_7">
-                        Roughly how many monthly hires has your company made <div class="preLockDown">post-lockdown 
-                        <sup>?</sup><span class="tooltip">during 4 months after COVID-19 lockdown-lift. The lift is marked by <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-4">Stage 3</a> lockdown lift, on <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July, 2020</a> for London, ON (Source: ontario.ca)</span></div>?
+                        Roughly how many monthly hires has your company made <div class="preLockDown">post-lockdown
+                            <sup>?</sup><span class="tooltip">during 4 months after COVID-19 lockdown-lift. The lift is
+                                marked by <a href="https://www.ontario.ca/page/reopening-ontario-stages#section-4">Stage
+                                    3</a> lockdown lift, on <a
+                                    href="https://www.ontario.ca/page/reopening-ontario-stages#section-1">17 July,
+                                    2020</a> for London, ON (Source: ontario.ca)</span></div>?
                     </label>
                     <br>
                     <input type="range" value="0" id="q5_7" name="q5_7" min="0" max="25" list="job_posts" class="question">
@@ -552,73 +621,80 @@
 
                     <br>
                     <label for="q5_7_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_7_notes" id="q5_7_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
 
                 <br>
                 <li>
-                    <label for="q5_8">Has there been any recent demand or hiring trends you have noticed since the <div class="preLockDown"> lockdown<sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020</span></div>?
+                    <label for="q5_8">Has there been any recent demand or hiring trends you have noticed since the <div
+                            class="preLockDown"> lockdown<sup>?</sup><span class="tooltip">Lockdown has started in
+                                London, ON around mid-March, 2020</span></div>?
                         <span class="hint">
-                            For instance, do you sense more/less need for hires, more/less job applications submitted per position posting? 
-                            Do job application frequencies vary drastically depending on the position? Has a demand for new skill-sets surfaced in light of the lockdown? Are you noticing different applicants than normal (such as more/less remote applicants, or more junior/senior applicants)? 
-                            Those are just suggestions; any insights, particularly those in the light of pre/post lockdown comparisons, are most welcome!
+                            For instance, do you sense more/less need for hires, more/less job applications submitted
+                            per position posting?
+                            Do job application frequencies vary drastically depending on the position? Has a demand for
+                            new skill-sets surfaced in light of the lockdown? Are you noticing different applicants than
+                            normal (such as more/less remote applicants, or more junior/senior applicants)?
+                            Those are just suggestions; any insights, particularly those in the light of pre/post
+                            lockdown comparisons, are most welcome!
                         </span>
                     </label>
 
                     <br>
                     <label for="q5_8_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_8" id="q5_8" cols="100" rows="10">
-                        Observed demand/hiring insights
-                    </textarea>
+                    <div class="more-margin">
+                        <textarea class="form-text" class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
             </ol>
             <h2>6. Employer Demand for Skills</h2>
 
             <div id="softskills">
                 <label for="soft-skills">List the top three general soft skills you favor in your employees:</label><br>
-                
-                    <input type="text" name="softskill1"><br>
-                    <input type="text" name="softskill2"><br>
-                  <input type="text" name="softskill3"><br>
-                </div>
-        
-<!-- Cadence-->
-                <div id="technicalskills">
-                <label for="technical-skills">List the top three technical skills you favor 
+
+                <input type="text" name="softskill1"><br>
+                <input type="text" name="softskill2"><br>
+                <input type="text" name="softskill3"><br>
+            </div>
+
+            <!-- Cadence-->
+            <div id="technicalskills">
+                <label for="technical-skills">List the top three technical skills you favor
                     in your employees according to following roles:</label><br><br>
-        
+
                 <label id="label" for="frontdevskills">Front-end Developer employees:</label><br>
-                    <input type="text" name="frontdevskill1">
-                    <input type="text" name="frontdevskill2">
-                    <input type="text" name="frontdevskill3"><br>
-        
+                <input type="text" name="frontdevskill1">
+                <input type="text" name="frontdevskill2">
+                <input type="text" name="frontdevskill3"><br>
+
                 <label id="label" for="backdevskills">Back-end Developer employees:</label><br>
-                    <input type="text" name="backfrontdevskill1">
-                    <input type="text" name="backfrontdevskill2">
-                    <input type="text" name="backfrontdevskill3"><br>
-        
+                <input type="text" name="backfrontdevskill1">
+                <input type="text" name="backfrontdevskill2">
+                <input type="text" name="backfrontdevskill3"><br>
+
                 <label id="label" for="softwaredevskills">Software Developer employees:</label><br>
-                    <input type="text" name="softwaredevskill1">
-                    <input type="text" name="bsoftwaredevskill2">
-                    <input type="text" name="softwaredevskill3"><br>
-                    
+                <input type="text" name="softwaredevskill1">
+                <input type="text" name="bsoftwaredevskill2">
+                <input type="text" name="softwaredevskill3"><br>
+
                 <label for="desskills">Designer employees:</label><br>
-                    <input type="text" name="desskill1">
-                    <input type="text" name="desskill2">
-                    <input type="text" name="desskill3"><br>
-        
+                <input type="text" name="desskill1">
+                <input type="text" name="desskill2">
+                <input type="text" name="desskill3"><br>
+
                 <label for="pmskills">Project Manager employees:</label><br>
-                    <input type="text" name="pmskill1">
-                    <input type="text" name="pmskill2">
-                    <input type="text" name="pmskill3"><br>
-                    
+                <input type="text" name="pmskill1">
+                <input type="text" name="pmskill2">
+                <input type="text" name="pmskill3"><br>
+
                 <label for="marketingskills">Marketing specialist employees:</label><br>
-                    <input type="text" name="marketingskill1">
-                    <input type="text" name="marketingskill2">
-                    <input type="text" name="marketingskill3"><br>
-                </div>
+                <input type="text" name="marketingskill1">
+                <input type="text" name="marketingskill2">
+                <input type="text" name="marketingskill3"><br>
+            </div>
+
 
             <div id="formQ7">
                 <h2>7. Office / Satellite Site Expansion</h2>
@@ -627,154 +703,55 @@
 
                     <input type="radio" id="Yes" name="yn7" value="Yes">
                     <label for="Yes">Yes</label>
-                  </div>
-                  <div>
+                </div>
+                <div>
                     <input type="radio" id="No" name="yn7" value="No">
                     <label for="No">No</label>
-                  </div>
-                  
-                  <div>
-                  <p class="subQuestions"> 7.2 If you answered Yes, Where are they located?</p>
-                  <label for="adr"><i class="fa fa-address"></i> Address</label>
-                  <input type="text" id="adr" name="address" placeholder="45 Talbot St">
-                  <label for="city"><i class="fa fa-institution"></i> City</label>
-                  <input type="text" id="city" name="city" placeholder="London">
-                  <label for="province">Province</label>
-                  <input type="text" id="province" name="province" placeholder="ON">
-                  <label for="zip">Zip</label>
-                  <input type="text" id="zip" name="zip" placeholder="S3R 1Q1">
-                  </div>
+                </div>
 
-                  <div>
-                      <p class="subQuestions">7.3 Do you plan to expand in the next years?</p>
-                      <div>
+                <div>
+                    <p class="subQuestions"> 7.2 If you answered Yes, Where are they located?</p>
+                    <label for="adr"><i class="fa fa-address"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="45 Talbot St">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="London">
+                    <label for="province">Province</label>
+                    <input type="text" id="province" name="province" placeholder="ON">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="S3R 1Q1">
+                </div>
+
+                <div>
+                    <p class="subQuestions">7.3 Do you plan to expand in the next years?</p>
+                    <div>
                         <input type="radio" id="Yes" name="yn7o2" value="Yes">
                         <label for="Yes">Yes</label>
-                      </div>
-                      <div>
-                        <input type="radio" id="No" name="yn702" value="No">
-                        <label for="No">No</label>
-                      </div>
-                  </div>
-
-                  <div>
-                    <p class="subQuestions">7.3 When is the expected completion date of your expansion??</p>
-                    <div>
-                      <input type="radio" id="expan1" name="expan" value="under">
-                      <label for="expan1">Under 1 year</label>
                     </div>
                     <div>
-                      <input type="radio" id="expan2" name="expan" value="3year">
-                      <label for="expan2">1-3 years</label>
+                        <input type="radio" id="No" name="yn702" value="No">
+                        <label for="No">No</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="subQuestions">7.3 When is the expected completion date of your expansion??</p>
+                    <div>
+                        <input type="radio" id="expan1" name="expan" value="under">
+                        <label for="expan1">Under 1 year</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="expan2" name="expan" value="3year">
+                        <label for="expan2">1-3 years</label>
                     </div>
                     <div>
                         <input type="radio" id="expan3" name="expan" value="over3year">
                         <label for="expan3">Over 3 years</label>
-                      </div>
+                    </div>
                 </div><br><br>
-<div>
-    <h2>8. Recruiting Talent</h2>
-    <label for="slider_range_one">8.1 What percentage of your skilled professionals are from London</label>
-    <section class="london_slider rangeResponse">
-        <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_one">
-        <p class="q1_response response" id="fill_in_one">%</p>
-    </section>
-    <br>
-
-    <label for="slider_range_two"> 8.2 What percentage of your skilled professionals are from other countries?</label>
-    <section class="countries_slider">
-        <input type="range" min="1" max="100" value="0" class="slider question" list="percentages" id="slider_range_two">
-        <p class="q1_response response" id="fill_in_two">%</p>
-    </section>
-
-    <br>
-            <label for="uni_col">What institutions are your early graduates coming from ?</label>
-            <input type="text" id="uni_col" name="uni_col" placeholder="University/College">
-            <br>
-            <br>
-            </div>
-            </div>
-            <h2>9. What new emerging tech do you currently see in the sector?</h2>
-			<div>
-				<label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual selections)</label>
-				<select multiple class="form-control" id="sel2">
-					<option>Machine Learning</option>
-					<option>IT Auditing</option>
-					<option>Cybersecurity</option>
-					<option>Cloud Computing</option>
-                </select>
-                <p>What skill sets should professionals have and/or look to obtain, to leverage these opportunities? List them, and then rank the top 3 most important.</p>
-                <div class="form-group">
-                    <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual selections)</label>
-                    <select multiple class="form-control" id="sel2">
-                        <option>Software Engineer</option>
-                        <option>Machine Learning</option>
-                        <option>UX Design</option>
-                        <option>Full-Stack Web Development</option>
-                        <option>IT Auditing</option>
-                        <option>Digital Marketing</option>
-                        <option>Cybersecurity</option>
-                        <option>Cloud Computing</option>
-                    </select>
-                </div>
-			</div>
-            <label for="q9_notes" class="hidden">additional notes</label>
-            <textarea name="q9_notes" id="q9_notes" cols="100" rows="2">
-                Additional notes/comments, if any 
-            </textarea>
-
-            <div id="sectorgrowth">
-                <h2>10. Actions to Support/Grow the Sector?</h2>
-
-                <label for="sectorgrowth">What top three actions do you feel the 
-                    London tech sector calls for in order to further develop and grow</label><br><br>
-    
                 <div>
-                <input type="text" class="sectorgrowth1" id="sectorgrowth1" name="sectorgrowth1">
-                <select name="sectorgrowth1" id="sectorgrowth1">
-                    <option value="Talent">Stronger talent pool</option>
-                    <option value="Hiring">International hiring</option>
-                    <option value="Funding">Public funding</option>
-                    <option value="Community">Community outreach</option>
-                    <option value="Startup">Startup resources</option>
-                    <option value="Promotion">Showcasing of the London tech community</option>
-                    <option value="Living">Improvement of London's standard of living</option>
-                    <option value="Living">Develop partnerships with universitites and colleges</option>
-                </select>
-                </div>
-    
-                <div>
-                <input type="text" class="sectorgrowth2" id="sectorgrowth2" name="sectorgrowth2">
-                <select name="sectorgrowth2" id="sectorgrowth2">
-                    <option value="Talent">Stronger talent pool</option>
-                    <option value="Hiring">International hiring</option>
-                    <option value="Funding">Public funding</option>
-                    <option value="Community">Community outreach</option>
-                    <option value="Startup">Startup resources</option>
-                    <option value="Promotion">Showcasing of the London tech community</option>
-                    <option value="Living">Improvement of London's standard of living</option>
-                    <option value="Living">Develop partnerships with universitites and colleges</option>
-                </select>
-                </div>
-    
-                <div>
-                <input type="text" class="sectorgrowth3" id="sectorgrowth3" name="sectorgrowth3">
-                <select name="sectorgrowth3" id="sectorgrowth3">
-                    <option value="Talent">Stronger talent pool</option>
-                    <option value="Hiring">International hiring</option>
-                    <option value="Funding">Public funding</option>
-                    <option value="Community">Community outreach</option>
-                    <option value="Startup">Startup resources</option>
-                    <option value="Promotion">Showcasing of the London tech community</option>
-                    <option value="Living">Improvement of London's standard of living</option>
-                    <option value="Living">Develop partnerships with universitites and colleges</option>
-                </select>
-                </div>
+                    <h2>8. Recruiting Talent</h2>
+                    8.1 What percentage of your skilled professionals are from London ?</h2>
 
-            <h2>11. Shift to Remote Work</h2>
-            <ol>
-                <li>
-                    <label for="q1">What was the percentage of employees who worked remotely on a regular basis during <div class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div>?</label>
                     <div class="rangeResponse">
                         <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
                         <datalist id="percentages">
@@ -793,218 +770,374 @@
                         <p class="q1_response response">%</p>
                     </div>
 
-                    <label for="q1_notes" class="hidden">additional notes</label>
-                    <textarea name="q1_notes" id="q1_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
-                </li>
-                <br>
-                <li>
-                    <label for="q2">What is the current percentage of employees who work remotely on a regular basis?</label>
+                    8.2 What percentage of your skilled professionals are from other countries ?
+
                     <div class="rangeResponse">
-                        <input type="range" value="0" id="q2" name="q2" list="percentages" class="question">
-                        <p class="q2_response response">%</p>
-                    </div>
-                    
-                    <label for="q2_notes" class="hidden">additional notes</label>
-                    <textarea name="q2_notes" id="q2_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
-                </li>
-                <br>
-                <li>
-                    <label for="london_loc">If there were remote employees <div class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div>, were all remote employees London-based?</label>
-                    <br>
-                    <input type="radio" id="london_loc_yes" name="london_loc" value="yes">
-                    <label for="london_loc_yes">Yes</label>
-                    <input type="radio" id="london_loc_no" name="london_loc" value="no">
-                    <label for="london_loc_no">No</label>
-                    <p>If answered No above, what roughly is the percentage of remote employees from Canada, and abroad?</p>
-                    <div class="rangeResponse">
-                        <label for="q3_2_1"> <p>Canada</p></label>
-                        <input type="range" value="0" id="q3_2_1" name="q3_2_1" list="percentages" class="question">
-                        <p class="response">%</p>
-                    </div>
-                    <div class="rangeResponse">
-                        <label for="q3_2_2"><p>Abroad</p></label>
-                        <input type="range" value="0" id="q3_2_2" name="q3_2_2" list="percentages" class="question">
-                        <p class="response">%</p>
+                        <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                        <datalist id="percentages">
+                            <option value="0"></option>
+                            <option value="10"></option>
+                            <option value="20"></option>
+                            <option value="30"></option>
+                            <option value="40"></option>
+                            <option value="50"></option>
+                            <option value="60"></option>
+                            <option value="70"></option>
+                            <option value="80"></option>
+                            <option value="90"></option>
+                            <option value="100"></option>
+                        </datalist>
+                        <p class="q1_response response">%</p>
                     </div>
 
-                    <label for="q3_notes" class="hidden">additional notes</label>
-                    <textarea name="q3_notes" id="q3_notes" cols="100" rows="2">
-                        Additional notes/comments, if any (for instance, if you hire employees from abroad, what countries do you hire from?) 
-                    </textarea>
-                </li>
-                <br>
-                <li>
-                    <label for="london_loc">If there currently are remote employees, are all remote employees London-based?</label>
                     <br>
-                    <input type="radio" id="london_loc_yes" name="london_loc" value="yes">
-                    <label for="london_loc_yes">Yes</label>
-                    <input type="radio" id="london_loc_no" name="london_loc" value="no">
-                    <label for="london_loc_no">No</label>
-                    <p>If answered No above, what roughly is the percentage of remote employees from Canada, and abroad?</p>
-                    <div class="rangeResponse">
-                        <label for="q3_3_1"><p>Canada</p></label>
-                        <input type="range" value="0" id="q3_3_1" name="q3_3_1" list="percentages" class="question">
-                        <p class="response">%</p>
-                    </div>
-                    <div class="rangeResponse">
-                        <label for="q3_3_2"><p>Abroad</p></label>
-                        <input type="range" value="0" id="q3_3_2" name="q3_3_2" list="percentages" class="question">
-                        <p class="response">%</p>
-                    </div>
-                    
-                    <label for="q3_notes" class="hidden">additional notes</label>
-                    <textarea name="q3_notes" id="q3_notes" cols="100" rows="2">
-                        Additional notes/comments, if any (for instance, if you hire employees from abroad, what countries do you hire from?) 
-                    </textarea>
-                </li>
-            
-                <br>
-                <li>
-                    <label for="future_remote">In the absence of COVID-19, how do you see remote work in your company, in comparison to its pre-lockdown patterns, shaping over the next year?</label>
+                    <label for="uni_col">What institutions are your early graduates coming from ?</label>
+                    <input type="text" id="uni_col" name="uni_col" placeholder="University/College">
                     <br>
-                    <input type="radio" id="remote_1" name="future_remote" value="remote_1">
-                    <label for="remote_1">Definitely increasing, or fully remote work</label>
                     <br>
-                    <input type="radio" id="remote_2" name="future_remote" value="remote_2">
-                    <label for="remote_2">Mostly increasing</label>
-                    <br>
-                    <input type="radio" id="remote_3" name="future_remote" value="remote_3">
-                    <label for="remote_3">Somewhat increasing</label>
-                    <br>
-                    <input type="radio" id="remote_4" name="future_remote" value="remote_4">
-                    <label for="remote_4">The same as pre-lockdown, no change</label>
-                    <br>
-                    <input type="radio" id="remote_5" name="future_remote" value="remote_5">
-                    <label for="remote_5">Somewhat decreasing</label>
-                    <br>
-                    <input type="radio" id="remote_6" name="future_remote" value="remote_6">
-                    <label for="remote_6">Mostly decreasing</label>
-                    <br>
-                    <input type="radio" id="remote_7" name="future_remote" value="remote_7">
-                    <label for="remote_7">Definitely decreasing, or no remote work</label>
-                   
-                    <br>
-                    <label for="q4_notes" class="hidden">additional notes</label>
-                    <textarea name="q4_notes" id="q4_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
-                </li>
+                </div>
+            </div>
+            <h2>9. What new emerging tech do you currently see in the sector?</h2>
+            <div>
+                <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual
+                    selections)</label>
+                <select multiple class="form-control" id="sel2">
+                    <option>Machine Learning</option>
+                    <option>IT Auditing</option>
+                    <option>Cybersecurity</option>
+                    <option>Cloud Computing</option>
+                </select>
+                <p>What skill sets should professionals have and/or look to obtain, to leverage these opportunities? List them, and then rank the top 3 most important.</p>
+                <div class="form-group">
+                    <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual
+                        selections)</label>
+                    <select multiple class="form-control" id="sel2">
+                        <option>Software Engineer</option>
+                        <option>Machine Learning</option>
+                        <option>UX Design</option>
+                        <option>Full-Stack Web Development</option>
+                        <option>IT Auditing</option>
+                        <option>Digital Marketing</option>
+                        <option>Cybersecurity</option>
+                        <option>Cloud Computing</option>
+                    </select>
+                </div>
+            </div>
+            <label for="q9_notes" class="hidden">additional notes</label>
+            <div class="more-margin">
+                <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+            </div>
 
-                <br>
-                <li>
-                    <label for="future_remote_2">In the absence of COVID-19, how do you see remote work in your company, in comparison to its pre-lockdown patterns, shaping over the next 5 years?</label>
-                    <br>
-                    <input type="radio" id="remote_2_1" name="future_remote_2_2" value="remote_2_1">
-                    <label for="remote_2_1">Definitely increasing, or fully remote work</label>
-                    <br>
-                    <input type="radio" id="remote_2_2" name="future_remote_2_2" value="remote_2_2">
-                    <label for="remote_2_2">Mostly increasing</label>
-                    <br>
-                    <input type="radio" id="remote_2_3" name="future_remote_2_2" value="remote_2_3">
-                    <label for="remote_2_3">Somewhat increasing</label>
-                    <br>
-                    <input type="radio" id="remote_2_4" name="future_remote_2_2" value="remote_2_4">
-                    <label for="remote_2_4">The same as pre-lockdown, no change</label>
-                    <br>
-                    <input type="radio" id="remote_2_5" name="future_remote_2_2" value="remote_2_5">
-                    <label for="remote_2_5">Somewhat decreasing</label>
-                    <br>
-                    <input type="radio" id="remote_2_6" name="future_remote_2_2" value="remote_2_6">
-                    <label for="remote_2_6">Mostly decreasing</label>
-                    <br>
-                    <input type="radio" id="remote_2_7" name="future_remote_2_2" value="remote_2_7">
-                    <label for="remote_2_7">Definitely decreasing, or no remote work</label>
-                   
-                    <br>
-                    <label for="q4_notes" class="hidden">additional notes</label>
-                    <textarea name="q4_notes" id="q4_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
-                </li>
+            <div id="sectorgrowth">
+                <h2>10. Actions to Support/Grow the Sector?</h2>
 
-                <br>
-                <li>
-                    <label for="q4">Does your company currently have a preference towards hiring remotely?</label>
-                    <br>
-                    <input type="radio" id="remote_pref_no_3" name="remote_pref" value="remote_pref_no_3">
-                    <label for="remote_pref_no_3">Definitely no</label>
-                    <br>
-                    <input type="radio" id="remote_pref_no_2" name="remote_pref" value="remote_pref_no_2">
-                    <label for="remote_pref_no_2">Mostly no</label>
-                    <br>
-                    <input type="radio" id="remote_pref_no_1" name="remote_pref" value="remote_pref_no_1">
-                    <label for="remote_pref_no_1">Somewhat no</label>
-                    <br>
-                    <input type="radio" id="remote_pref_neutral" name="remote_pref" value="remote_pref_neutral">
-                    <label for="remote_pref_neutral">Neutral</label>
-                    <br>
-                    <input type="radio" id="remote_pref_yes_1" name="remote_pref" value="remote_pref_yes_1">
-                    <label for="remote_pref_yes_1">Somewhat yes</label>
-                    <br>
-                    <input type="radio" id="remote_pref_yes_2" name="remote_pref" value="remote_pref_yes_2">
-                    <label for="remote_pref_yes_2">Mostly yes</label>
-                    <br>
-                    <input type="radio" id="remote_pref_yes_3" name="remote_pref" value="remote_pref_yes_3">
-                    <label for="remote_pref_yes_3">Definitely yes</label>
-                    <br>
+                <label for="sectorgrowth">What top three actions do you feel the
+                    London tech sector calls for in order to further develop and grow</label><br><br>
 
-                    <label for="q5_notes" class="hidden">additional notes</label>
-                    <textarea name="q5_notes" id="q5_notes" cols="100" rows="2">
-                        Additional notes/comments, if any 
-                    </textarea>
-                </li>
-                <br>
-                <li>
-                    <label for="q7">Why, or why not?</label>
+                <div>
+                    <input type="text" class="sectorgrowth1" id="sectorgrowth1" name="sectorgrowth1">
+                    <select name="sectorgrowth1" id="sectorgrowth1">
+                        <option value="Talent">Stronger talent pool</option>
+                        <option value="Hiring">International hiring</option>
+                        <option value="Funding">Public funding</option>
+                        <option value="Community">Community outreach</option>
+                        <option value="Startup">Startup resources</option>
+                        <option value="Promotion">Showcasing of the London tech community</option>
+                        <option value="Living">Improvement of London's standard of living</option>
+                        <option value="Living">Develop partnerships with universitites and colleges</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="text" class="sectorgrowth2" id="sectorgrowth2" name="sectorgrowth2">
+                    <select name="sectorgrowth2" id="sectorgrowth2">
+                        <option value="Talent">Stronger talent pool</option>
+                        <option value="Hiring">International hiring</option>
+                        <option value="Funding">Public funding</option>
+                        <option value="Community">Community outreach</option>
+                        <option value="Startup">Startup resources</option>
+                        <option value="Promotion">Showcasing of the London tech community</option>
+                        <option value="Living">Improvement of London's standard of living</option>
+                        <option value="Living">Develop partnerships with universitites and colleges</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="text" class="sectorgrowth3" id="sectorgrowth3" name="sectorgrowth3">
+                    <select name="sectorgrowth3" id="sectorgrowth3">
+                        <option value="Talent">Stronger talent pool</option>
+                        <option value="Hiring">International hiring</option>
+                        <option value="Funding">Public funding</option>
+                        <option value="Community">Community outreach</option>
+                        <option value="Startup">Startup resources</option>
+                        <option value="Promotion">Showcasing of the London tech community</option>
+                        <option value="Living">Improvement of London's standard of living</option>
+                        <option value="Living">Develop partnerships with universitites and colleges</option>
+                    </select>
+                </div>
+
+                <h2>11. Shift to Remote Work</h2>
+                <ol>
+                    <li>
+                        <label for="q1">What was the percentage of employees who worked remotely on a regular basis
+                            during <div class="preLockDown">pre-lockdown <sup>?</sup><span class="tooltip">druing 4
+                                    months prior to the COVID-19 lockdown (around mid-March, 2020)</span></div>?</label>
+                        <div class="rangeResponse">
+                            <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                            <datalist id="percentages">
+                                <option value="0"></option>
+                                <option value="10"></option>
+                                <option value="20"></option>
+                                <option value="30"></option>
+                                <option value="40"></option>
+                                <option value="50"></option>
+                                <option value="60"></option>
+                                <option value="70"></option>
+                                <option value="80"></option>
+                                <option value="90"></option>
+                                <option value="100"></option>
+                            </datalist>
+                            <p class="q1_response response">%</p>
+                        </div>
+
+                        <label for="q1_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
                     <br>
-                    <textarea id="q7" name="q7" rows="10" cols ="100">
-                        Why/why not does your company prefer remote hiring?
-                    </textarea> 
-                </li>
+                    <li>
+                        <label for="q2">What is the current percentage of employees who work remotely on a regular
+                            basis?</label>
+                        <div class="rangeResponse">
+                            <input type="range" value="0" id="q2" name="q2" list="percentages" class="question">
+                            <p class="q2_response response">%</p>
+                        </div>
+
+                        <label for="q2_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="london_loc">If there were remote employees <div class="preLockDown">pre-lockdown
+                                <sup>?</sup><span class="tooltip">druing 4 months prior to the COVID-19 lockdown (around
+                                    mid-March, 2020)</span></div>, were all remote employees London-based?</label>
+                        <br>
+                        <input type="radio" id="london_loc_yes" name="london_loc" value="yes">
+                        <label for="london_loc_yes">Yes</label>
+                        <input type="radio" id="london_loc_no" name="london_loc" value="no">
+                        <label for="london_loc_no">No</label>
+                        <p>If answered No above, what roughly is the percentage of remote employees from Canada, and abroad?
+                        </p>
+                        <div class="rangeResponse">
+                            <label for="q3_2_1">
+                                <p>Canada</p>
+                            </label>
+                            <input type="range" value="0" id="q3_2_1" name="q3_2_1" list="percentages" class="question">
+                            <p class="response">%</p>
+                        </div>
+                        <div class="rangeResponse">
+                            <label for="q3_2_2">
+                                <p>Abroad</p>
+                            </label>
+                            <input type="range" value="0" id="q3_2_2" name="q3_2_2" list="percentages" class="question">
+                            <p class="response">%</p>
+                        </div>
+
+                        <label for="q3_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="london_loc">If there currently are remote employees, are all remote employees
+                            London-based?</label>
+                        <br>
+                        <input type="radio" id="london_loc_yes" name="london_loc" value="yes">
+                        <label for="london_loc_yes">Yes</label>
+                        <input type="radio" id="london_loc_no" name="london_loc" value="no">
+                        <label for="london_loc_no">No</label>
+                        <p>If answered No above, what roughly is the percentage of remote employees from Canada, and abroad?
+                        </p>
+                        <div class="rangeResponse">
+                            <label for="q3_3_1">
+                                <p>Canada</p>
+                            </label>
+                            <input type="range" value="0" id="q3_3_1" name="q3_3_1" list="percentages" class="question">
+                            <p class="response">%</p>
+                        </div>
+                        <div class="rangeResponse">
+                            <label for="q3_3_2">
+                                <p>Abroad</p>
+                            </label>
+                            <input type="range" value="0" id="q3_3_2" name="q3_3_2" list="percentages" class="question">
+                            <p class="response">%</p>
+                        </div>
+
+                        <label for="q3_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+
+                    <br>
+                    <li>
+                        <label for="future_remote">In the absence of COVID-19, how do you see remote work in your
+                            company, in comparison to its pre-lockdown patterns, shaping over the next year?</label>
+                        <br>
+                        <input type="radio" id="remote_1" name="future_remote" value="remote_1">
+                        <label for="remote_1">Definitely increasing, or fully remote work</label>
+                        <br>
+                        <input type="radio" id="remote_2" name="future_remote" value="remote_2">
+                        <label for="remote_2">Mostly increasing</label>
+                        <br>
+                        <input type="radio" id="remote_3" name="future_remote" value="remote_3">
+                        <label for="remote_3">Somewhat increasing</label>
+                        <br>
+                        <input type="radio" id="remote_4" name="future_remote" value="remote_4">
+                        <label for="remote_4">The same as pre-lockdown, no change</label>
+                        <br>
+                        <input type="radio" id="remote_5" name="future_remote" value="remote_5">
+                        <label for="remote_5">Somewhat decreasing</label>
+                        <br>
+                        <input type="radio" id="remote_6" name="future_remote" value="remote_6">
+                        <label for="remote_6">Mostly decreasing</label>
+                        <br>
+                        <input type="radio" id="remote_7" name="future_remote" value="remote_7">
+                        <label for="remote_7">Definitely decreasing, or no remote work</label>
+
+                        <br>
+                        <label for="q4_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+
+                    <br>
+                    <li>
+                        <label for="future_remote_2">In the absence of COVID-19, how do you see remote work in your
+                            company, in comparison to its pre-lockdown patterns, shaping over the next 5 years?</label>
+                        <br>
+                        <input type="radio" id="remote_2_1" name="future_remote_2_2" value="remote_2_1">
+                        <label for="remote_2_1">Definitely increasing, or fully remote work</label>
+                        <br>
+                        <input type="radio" id="remote_2_2" name="future_remote_2_2" value="remote_2_2">
+                        <label for="remote_2_2">Mostly increasing</label>
+                        <br>
+                        <input type="radio" id="remote_2_3" name="future_remote_2_2" value="remote_2_3">
+                        <label for="remote_2_3">Somewhat increasing</label>
+                        <br>
+                        <input type="radio" id="remote_2_4" name="future_remote_2_2" value="remote_2_4">
+                        <label for="remote_2_4">The same as pre-lockdown, no change</label>
+                        <br>
+                        <input type="radio" id="remote_2_5" name="future_remote_2_2" value="remote_2_5">
+                        <label for="remote_2_5">Somewhat decreasing</label>
+                        <br>
+                        <input type="radio" id="remote_2_6" name="future_remote_2_2" value="remote_2_6">
+                        <label for="remote_2_6">Mostly decreasing</label>
+                        <br>
+                        <input type="radio" id="remote_2_7" name="future_remote_2_2" value="remote_2_7">
+                        <label for="remote_2_7">Definitely decreasing, or no remote work</label>
+
+                        <br>
+                        <label for="q4_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+
+                    <br>
+                    <li>
+                        <label for="q4">Does your company currently have a preference towards hiring remotely?</label>
+                        <br>
+                        <input type="radio" id="remote_pref_no_3" name="remote_pref" value="remote_pref_no_3">
+                        <label for="remote_pref_no_3">Definitely no</label>
+                        <br>
+                        <input type="radio" id="remote_pref_no_2" name="remote_pref" value="remote_pref_no_2">
+                        <label for="remote_pref_no_2">Mostly no</label>
+                        <br>
+                        <input type="radio" id="remote_pref_no_1" name="remote_pref" value="remote_pref_no_1">
+                        <label for="remote_pref_no_1">Somewhat no</label>
+                        <br>
+                        <input type="radio" id="remote_pref_neutral" name="remote_pref" value="remote_pref_neutral">
+                        <label for="remote_pref_neutral">Neutral</label>
+                        <br>
+                        <input type="radio" id="remote_pref_yes_1" name="remote_pref" value="remote_pref_yes_1">
+                        <label for="remote_pref_yes_1">Somewhat yes</label>
+                        <br>
+                        <input type="radio" id="remote_pref_yes_2" name="remote_pref" value="remote_pref_yes_2">
+                        <label for="remote_pref_yes_2">Mostly yes</label>
+                        <br>
+                        <input type="radio" id="remote_pref_yes_3" name="remote_pref" value="remote_pref_yes_3">
+                        <label for="remote_pref_yes_3">Definitely yes</label>
+                        <br>
+
+                        <label for="q5_notes" class="hidden">additional notes</label>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="q7">Why, or why not?</label>
+                        <br>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="q8">
+                            Have there been any recent remote hiring trends you have noticed since the <div
+                                class="preLockDown"> lockdown<sup>?</sup><span class="tooltip">Lockdown has started in
+                                    London, ON around mid-March, 2020</span></div>?
+                            <br> <span class="hint">For instance, Has a demand for new skill-sets surfaced in light of
+                                the lockdown? Are you considering a wider talent pool, such as candidates from outside
+                                London? Are you hiring for merged roles that would have normally (pre-lockdown) been
+                                separate positions?
+                                Are you noticing different applicants than normal (such as more/less remote applicants,
+                                or more junior/senior applicants)? Those are just suggestions; any insights,
+                                particularly those in the light of pre/post lockdown comparisons, are most
+                                welcome!</span>
+                        </label>
+                        <br>
+                        <div class="more-margin">
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Observed remote hiring trend insights"></textarea>
+                        </div>
+                    </li>
+                    <br>
+                </ol>
                 <br>
                 <li>
                     <label for="q8">
-                        Have there been any recent remote hiring trends you have noticed since the <div class="preLockDown"> lockdown<sup>?</sup><span class="tooltip">Lockdown has started in London, ON around mid-March, 2020</span></div>?
-                        <br> <span class="hint">For instance, Has a demand for new skill-sets surfaced in light of the lockdown? Are you considering a wider talent pool, such as candidates from outside London? Are you hiring for merged roles that would have normally (pre-lockdown) been separate positions? 
-                            Are you noticing different applicants than normal (such as more/less remote applicants, or more junior/senior applicants)? Those are just suggestions; any insights, particularly those in the light of pre/post lockdown comparisons, are most welcome!</span>
+                        <div> Are there any additional comments you would like to make on topics related to this survey?
+                        </div>
                     </label>
-                <br>
+                    <br>
 
-                    <textarea id="q8" name="q8" rows="10" cols ="100">
-                        Observed remote hiring trend insights
-                    </textarea> 
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
                 </li>
                 <br>
-            </ol>
-            <br>
-            <li>
-                <label for="q8">
-                    Are there any additional comments you would like to make on  topics related to this survey?
-                </label>
-            <br>
-                <textarea id="q8" name="q8" rows="10" cols ="100">
-                    Additional Comments
-                </textarea> 
-            </li>
-            <br>
-            <br>
-            <li>
-                <label for="q8">
-                    Are there any other companies, organizations or individuals you think we should contact for this project?
-                </label>
-            <br>
-
-                <textarea id="q8" name="q8" rows="10" cols ="100">
-                    Suggestions
-                </textarea> 
-            </li>
-            <br>
+                <br>
+                <li>
+                    <label for="q8">
+                        <div> Are there any other companies, organizations or individuals you think we should contact
+                            for this project?</div>
+                    </label>
+                    <br>
+                    <div class="more-margin">
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+                    </div>
+                </li>
+                <br>
         </form>
     </main>
     <script src="js/main.js"></script>
 </body>
+
 </html>
