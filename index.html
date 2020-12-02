@@ -17,26 +17,14 @@
         </section>
         <h1>London's Tech Sector Survey</h1>
         <p>Thank you for taking the time to participate in this survey!</p>
-        <p> The City of London and the Data Visualization program* at Fanshawe College have partnered on a project
-            designed to provide a 'snapshot' of the London digital creative community, through a selection of relevant
-            interactive visualizations and dashboards. The target is a Web application with a back end that could be
-            used to continue to gather new and changing data in future. The information we are collecting in this phase
-            will help shape the project as it develops.</p>
+        <p> The City of London and the Data Visualization program* at Fanshawe College have partnered on a project designed to provide a 'snapshot' of the London digital creative community, through a selection of relevant interactive visualizations and dashboards.
+            The target is a Web application with a back end that could be used to continue to gather new and changing data in future. The information we are collecting in this phase will help shape the project as it develops.</p>
 
-        <p>The City plans to collect and visualize this
-        information about digital creative companies as they want to use the information as part of their planning
-        activities, from selecting good locations for possible incubator spaces, to gather some insights into the
-        digital creative industry moving out of the first COVID lockdown, to identifying actions to help support and
-        grow the sector. Importantly, the information gathered will allow development of an application that can more
-        fully represent the strength and breadth of the sector in London. The City wants this application to be a step
-        towards better representation of London everywhere as a vital and growing tech hub.</p>
-        <br>
-        **** For questions related to COVID, for the purposes of this survey we have defined 3 time periods: ***pre,
-        during, post lockdown lengths***<br>
-        **** The information collected in this study will be visualized at the company level for available demographic
-        information (number of employees etc.) All other information pertaining to trends, employeee skill sets etc.
-        will be presented in a summarized fashion, with no specific company or individual information. Any questions
-        before we begin?***</p><br>
+        <p>The City plans to collect and visualize this information about digital creative companies as they want to use the information as part of their planning activities, from selecting good locations for possible incubator spaces, to gather some insights
+            into the digital creative industry moving out of the first COVID lockdown, to identifying actions to help support and grow the sector. Importantly, the information gathered will allow development of an application that can more fully represent
+            the strength and breadth of the sector in London. The City wants this application to be a step towards better representation of London everywhere as a vital and growing tech hub.</p>
+        <br> **** For questions related to COVID, for the purposes of this survey we have defined 3 time periods: ***pre, during, post lockdown lengths***<br> **** The information collected in this study will be visualized at the company level for available
+        demographic information (number of employees etc.) All other information pertaining to trends, employeee skill sets etc. will be presented in a summarized fashion, with no specific company or individual information. Any questions before we begin?***</p><br>
         <form action="#">
             <h2>General Company Information</h2>
             <label for="cname">Company</label>
@@ -55,8 +43,7 @@
             <section class="multiple_check">
                 <h2>Which roles are represented in your company?</h2>
                 <div class="more-margin">
-                    <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                        placeholder="Additional notes/comments, if any"></textarea>
+                    <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                 </div>
                 <section id="front-end-drop">
                     <label onclick="changeValueOne()">
@@ -247,8 +234,7 @@
                     </button>
                     <div>
                         <label for="mytext">Department Name:</label>
-                        <input type="text" name="mytext[]" id="department1" minlength="5" maxlength="24" size="26"
-                            spellcheck="true">
+                        <input type="text" name="mytext[]" id="department1" minlength="5" maxlength="24" size="26" spellcheck="true">
                         <label for="emploNum"></label>
                         <select name="emploNum" id="emploNum">
                             <option value="0-10">0-5</option>
@@ -303,8 +289,7 @@
             </section>
             <label for="q3_notes" class="hidden">additional notes</label>
             <div class="more-margin">
-                <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                    placeholder="Additional notes/comments, if any"></textarea>
+                <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
             </div>
 
             <!-- #4 question -->
@@ -313,15 +298,41 @@
             <p>
                 Increase in staffing:
             </p>
-            <section>
-                <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_three">
-                <p><span id="fill_in_three"></span>%</p>
-            </section>
+            <div class="rangeResponse">
+                <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                <datalist id="percentages">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+                <p class="q1_response response">%</p>
+            </div>
             Decrease in staffing:
-            <section>
-                <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_four">
-                <p><span id="fill_in_four"></span>%</p>
-            </section>
+            <div class="rangeResponse">
+                <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                <datalist id="percentages">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+                <p class="q1_response response">%</p>
+            </div>
 
 
             <h2>5. Change in Job Demands and Hires</h2>
@@ -357,8 +368,7 @@
                     <br>
                     <label for="q5_1_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -373,8 +383,7 @@
                                 mid-March, 2020)</span></div>?
                     </label>
                     <br>
-                    <input type="range" value="0" id="q5_2" name="q5_2" min="0" max="25" list="job_posts"
-                        class="question">
+                    <input type="range" value="0" id="q5_2" name="q5_2" min="0" max="25" list="job_posts" class="question">
                     <datalist id="job_posts">
                         <option value="0"></option>
                         <option value="5"></option>
@@ -388,8 +397,7 @@
                     <br>
                     <label for="q5_2_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -406,8 +414,7 @@
                         </div>?
                     </label>
                     <br>
-                    <input type="range" value="0" id="q5_2_2" name="q5_2_2" min="0" max="25" list="job_posts"
-                        class="question">
+                    <input type="range" value="0" id="q5_2_2" name="q5_2_2" min="0" max="25" list="job_posts" class="question">
                     <datalist id="job_posts">
                         <option value="0"></option>
                         <option value="5"></option>
@@ -421,8 +428,7 @@
                     <br>
                     <label for="q5_2_2_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -440,15 +446,13 @@
                                     2020</a> for London, ON (Source: ontario.ca)</span></div>?
                     </label>
                     <br>
-                    <input type="range" value="0" id="q5_3" name="q5_3" min="0" max="25" list="job_posts"
-                        class="question">
+                    <input type="range" value="0" id="q5_3" name="q5_3" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
 
                     <br>
                     <label for="q5_3_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -482,8 +486,7 @@
                     <br>
                     <label for="q5_4_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -520,8 +523,7 @@
                     <br>
                     <label for="q5_4_2_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -559,8 +561,7 @@
 
                     <label for="q5_5_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -573,15 +574,13 @@
                                 mid-March, 2020)</span></div>?
                     </label>
                     <br>
-                    <input type="range" value="0" id="q5_6" name="q5_6" min="0" max="25" list="job_posts"
-                        class="question">
+                    <input type="range" value="0" id="q5_6" name="q5_6" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
 
                     <br>
                     <label for="q5_6_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -596,15 +595,13 @@
                         </div>?
                     </label>
                     <br>
-                    <input type="range" value="0" id="q5_6_2" name="q5_6_2" min="0" max="25" list="job_posts"
-                        class="question">
+                    <input type="range" value="0" id="q5_6_2" name="q5_6_2" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
 
                     <br>
                     <label for="q5_6_2_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -619,15 +616,13 @@
                                     2020</a> for London, ON (Source: ontario.ca)</span></div>?
                     </label>
                     <br>
-                    <input type="range" value="0" id="q5_7" name="q5_7" min="0" max="25" list="job_posts"
-                        class="question">
+                    <input type="range" value="0" id="q5_7" name="q5_7" min="0" max="25" list="job_posts" class="question">
                     <p class="response notPercent"></p>
 
                     <br>
                     <label for="q5_7_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea  class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
 
@@ -650,8 +645,7 @@
                     <br>
                     <label for="q5_8_notes" class="hidden">additional notes</label>
                     <div class="more-margin">
-                        <textarea class="form-text" class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
             </ol>
@@ -758,18 +752,43 @@
                     <h2>8. Recruiting Talent</h2>
                     8.1 What percentage of your skilled professionals are from London ?</h2>
 
-                    <section class="london_slider">
-                        <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_one">
-                        <p><span id="fill_in_one"></span>%</p>
-                    </section>
-                    <br>
+                    <div class="rangeResponse">
+                        <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                        <datalist id="percentages">
+                            <option value="0"></option>
+                            <option value="10"></option>
+                            <option value="20"></option>
+                            <option value="30"></option>
+                            <option value="40"></option>
+                            <option value="50"></option>
+                            <option value="60"></option>
+                            <option value="70"></option>
+                            <option value="80"></option>
+                            <option value="90"></option>
+                            <option value="100"></option>
+                        </datalist>
+                        <p class="q1_response response">%</p>
+                    </div>
 
                     8.2 What percentage of your skilled professionals are from other countries ?
 
-                    <section class="countries_slider">
-                        <input type="range" min="1" max="100" value="0" class="slider" id="slider_range_two">
-                        <p><span id="fill_in_two"></span>%</p>
-                    </section>
+                    <div class="rangeResponse">
+                        <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
+                        <datalist id="percentages">
+                            <option value="0"></option>
+                            <option value="10"></option>
+                            <option value="20"></option>
+                            <option value="30"></option>
+                            <option value="40"></option>
+                            <option value="50"></option>
+                            <option value="60"></option>
+                            <option value="70"></option>
+                            <option value="80"></option>
+                            <option value="90"></option>
+                            <option value="100"></option>
+                        </datalist>
+                        <p class="q1_response response">%</p>
+                    </div>
 
                     <br>
                     <label for="uni_col">What institutions are your early graduates coming from ?</label>
@@ -788,8 +807,7 @@
                     <option>Cybersecurity</option>
                     <option>Cloud Computing</option>
                 </select>
-                <p>What skill sets should professionals have and/or look to obtain, to leverage these opportunities?
-                    List them, and then rank the top 3 most important.</p>
+                <p>What skill sets should professionals have and/or look to obtain, to leverage these opportunities? List them, and then rank the top 3 most important.</p>
                 <div class="form-group">
                     <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual
                         selections)</label>
@@ -807,8 +825,7 @@
             </div>
             <label for="q9_notes" class="hidden">additional notes</label>
             <div class="more-margin">
-                <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                    placeholder="Additional notes/comments, if any"></textarea>
+                <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
             </div>
 
             <div id="sectorgrowth">
@@ -885,8 +902,7 @@
 
                         <label for="q1_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
                     <br>
@@ -900,8 +916,7 @@
 
                         <label for="q2_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
                     <br>
@@ -914,8 +929,8 @@
                         <label for="london_loc_yes">Yes</label>
                         <input type="radio" id="london_loc_no" name="london_loc" value="no">
                         <label for="london_loc_no">No</label>
-                        <p>If answered No above, what roughly is the percentage of remote employees from Canada, and
-                            abroad?</p>
+                        <p>If answered No above, what roughly is the percentage of remote employees from Canada, and abroad?
+                        </p>
                         <div class="rangeResponse">
                             <label for="q3_2_1">
                                 <p>Canada</p>
@@ -933,8 +948,7 @@
 
                         <label for="q3_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
                     <br>
@@ -946,8 +960,8 @@
                         <label for="london_loc_yes">Yes</label>
                         <input type="radio" id="london_loc_no" name="london_loc" value="no">
                         <label for="london_loc_no">No</label>
-                        <p>If answered No above, what roughly is the percentage of remote employees from Canada, and
-                            abroad?</p>
+                        <p>If answered No above, what roughly is the percentage of remote employees from Canada, and abroad?
+                        </p>
                         <div class="rangeResponse">
                             <label for="q3_3_1">
                                 <p>Canada</p>
@@ -965,8 +979,7 @@
 
                         <label for="q3_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
 
@@ -999,8 +1012,7 @@
                         <br>
                         <label for="q4_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
 
@@ -1033,8 +1045,7 @@
                         <br>
                         <label for="q4_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
 
@@ -1066,8 +1077,7 @@
 
                         <label for="q5_notes" class="hidden">additional notes</label>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
                     <br>
@@ -1075,8 +1085,7 @@
                         <label for="q7">Why, or why not?</label>
                         <br>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Additional notes/comments, if any"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                         </div>
                     </li>
                     <br>
@@ -1096,8 +1105,7 @@
                         </label>
                         <br>
                         <div class="more-margin">
-                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                                placeholder="Observed remote hiring trend insights"></textarea>
+                            <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Observed remote hiring trend insights"></textarea>
                         </div>
                     </li>
                     <br>
@@ -1111,8 +1119,7 @@
                     <br>
 
                     <div class="more-margin">
-                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
                 <br>
@@ -1124,8 +1131,7 @@
                     </label>
                     <br>
                     <div class="more-margin">
-                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2"
-                            placeholder="Additional notes/comments, if any"></textarea>
+                        <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                     </div>
                 </li>
                 <br>
