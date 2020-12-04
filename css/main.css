@@ -7,6 +7,10 @@ body {
 .strong {
   font-weight: bold; }
 
+  ol li {
+    list-style-type: none;
+  }
+
 main {
   display: flex;
   flex-direction: column;
