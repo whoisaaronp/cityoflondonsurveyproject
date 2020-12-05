@@ -45,170 +45,116 @@
             <input type="text" id="role" name="role" placeholder="company role">
             <br>
             <br><hr>
+
             <section class="multiple_check">
                 <h2>1. Which roles are represented in your company?</h2>
-                <div class="more-margin">
-                    <textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
-                </div>
-                <section id="front-end-drop">
-                    <label onclick="changeValueOne()">
+
+                    <label>
                         <input id="front-end-drop" name="prefer" value="front-end" type="checkbox"
                             class="input-checkbox" />
-                        Front-end Developer</label><br><br>
-                    <label for="q5_5_notes" class="hidden">additional notes</label>
-                </section>
-                <section id="drop_box" class="hidden">
-                    <label for="front-end">How many estimated skilled professionals work in this department?</label>
-                    <select name="front-end" id="front-end">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Front-end Developer
+                    </label><br>
 
-                <section id="back-end-drop">
-                    <label onclick="changeValueTwo()">
+                    <label>
                         <input id="back-end-drop" name="prefer" value="back-end" type="checkbox"
                             class="input-checkbox" />
-                        Back-end Developer</label></section>
-                <br>
-                <section id="drop_box_two" class="hidden">
-                    <label for="back-end">How many estimated skilled professionals work in this department?</label>
-                    <select name="back-end" id="back-end">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Back-end Developer
+                    </label><br>
 
-                <section id="full-stack-drop">
-                    <label onclick="changeValueThree()">
+                    <label>
+                        <input id="programmer-drop" name="prefer" value="programmer" type="checkbox"
+                            class="input-checkbox" />
+                        Programmer
+                    </label><br>
+          
+                    <label>
                         <input id="full-stack-drop" name="prefer" value="full-stack" type="checkbox"
                             class="input-checkbox" />
-                        Full-Stack Developer</label>
-                </section>
-                <br>
-                <section id="drop_box_three" class="hidden">
-                    <label for="full-stack">How many estimated skilled professionals work in this department?</label>
-                    <select name="full-stack" id="full-stack">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Full-Stack Developer
+                    </label><br>
 
-
-                <section id="data-vis">
-                    <label onclick="changeValueFour()">
+                    <label>
                         <input id="data-vis-drop" name="prefer" value="data-vis" type="checkbox"
                             class="input-checkbox" />
-                        Data Visualization</label></section>
-                <br>
-                <section id="drop_box_four" class="hidden">
-                    <label for="data-vis">How many estimated skilled professionals work in this department?</label>
-                    <select name="data-vis" id="data-vis">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Data Visualization
+                    </label><br>
 
+                    <label>
+                        <input id="data-analysis-drop" name="prefer" value="data-analysis" type="checkbox"
+                            class="input-checkbox" />
+                        Data Analysis
+                    </label><br>
 
-                <section id="cyber-security">
-                    <label onclick="changeValueFive()">
+                    <label>
                         <input id="cyber-security-drop" name="prefer" value="cyber-security" type="checkbox"
                             class="input-checkbox" />
-                        Cyber Security</label></section>
-                <br>
-                <section id="drop_box_five" class="hidden">
-                    <label for="cyber-security">How many estimated skilled professionals work in this
-                        department?</label>
-                    <select name="cyber-security" id="cyber-security">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Cyber Security
+                    </label><br>
 
-                <section id="motion-design">
                     <label onclick="changeValueSix()">
                         <input id="motion-design-drop" name="prefer" value="motion-design" type="checkbox"
                             class="input-checkbox" />
-                        Motion Designer</label></section>
-                <br>
-                <section id="drop_box_six" class="hidden">
-                    <label for="motion-design">How many estimated skilled professionals work in this department?</label>
-                    <select name="motion-design" id="motion-design">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Motion Designer
+                    </label><br>
 
-                <section id="graphic-design">
-                    <label onclick="changeValueSeven()">
+                    <label>
                         <input id="graphic-design-drop" name="prefer" value="graphic-design" type="checkbox"
                             class="input-checkbox" />
-                        Graphic Designer</label></section>
-                <br>
-                <section id="drop_box_seven" class="hidden">
-                    <label for="graphic-design">How many estimated skilled professionals work in this
-                        department?</label>
-                    <select name="graphic-design" id="graphic-design">
-                        <option value="value_1">1</option>
-                        <option value="value_2">2</option>
-                        <option value="value_3">3</option>
-                        <option value="value_4">4</option>
-                        <option value="value_5">5</option>
-                        <option value="value_6">6</option>
-                        <option value="value_7">7</option>
-                        <option value="value_8">8</option>
-                        <option value="value_9">9</option>
-                        <option value="value_10">10</option>
-                    </select>
-                </section>
+                        Graphic Designer
+                    </label><br>
+
+                    <label>
+                        <input id="ui-ux-drop" name="prefer" value="ui-ux" type="checkbox"
+                            class="input-checkbox" />
+                        UI/UX Designer
+                    </label><br>
+
+
+                    <label>
+                        <input id="video-shooting-drop" name="prefer" value="video-shooting" type="checkbox"
+                            class="input-checkbox" />
+                        Video shooting
+                    </label><br>
+
+                    <label>
+                        <input id="video-editing-drop" name="prefer" value="video-editing" type="checkbox"
+                            class="input-checkbox" />
+                        Video editing
+                    </label><br>
+
+                    <label>
+                        <input id="audio-drop" name="prefer" value="audio" type="checkbox"
+                            class="input-checkbox" />
+                        Audio engineer
+                    </label><br>
+
+                    <label>
+                        <input id="marketing-drop" name="prefer" value="marketing" type="checkbox"
+                            class="input-checkbox" />
+                        Marketing
+                    </label><br>
+
+                    <label>
+                        <input id="3d-drop" name="prefer" value="3d" type="checkbox"
+                            class="input-checkbox" />
+                        3D asset creator
+                    </label><br>
+
+                    <label>
+                        <input id="artists-drop" name="prefer" value="artists" type="checkbox"
+                            class="input-checkbox" />
+                        Artists
+                    </label><br>
+
+                    <label>
+                        <input id="project-managers-drop" name="prefer" value="project-managers" type="checkbox"
+                            class="input-checkbox" />
+                        Project Managers
+                    </label><br>
+
+                    <input type="text" name="company-role-other1" placeholder="Other role"><br>
+                    <input type="text" name="company-role-other2" placeholder="Other role"><br>
+                    <input type="text" name="company-role-other3" placeholder="Other role"><br>
             </section>
 
             <hr>
@@ -230,12 +176,24 @@
                 <select name="role1" id="role1">
                     <option value="Front-end">Front-end Developer</option>
                     <option value="Back-end">Back-end Developer</option>
-                    <option value="Software">Software Developer</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Full-stack">Full-stack Developer</option>
+                    <option value="Data-vis">Data Visualization</option>
+                    <option value="Data-analysis">Data Analysis</option>
                     <option value="Cyber Security">Cyber Security</option>
                     <option value="Motion Designer">Motion Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="UI-UX">UI/UX Designer</option>
+                    <option value="Video-shooting">Video Shooting</option>
+                    <option value="Video-editing">Video Editing</option>
+                    <option value="Audio-engineer">Audio Engineer</option>
+                    <option value="Marketing-specialist">Marketing Specialist</option>
+                    <option value="3D-creator">3D asset creator</option>
+                    <option value="Artists">Artists</option>
                     <option value="Project Manager">Project Manager</option>
-                    <option value="Marketing specialist">Marketing Specialist</option>
+                    <option value="other">Other1</option>
+                    <option value="other">Other2</option>
+                    <option value="other">Other3</option>
                     <option value="NA">N/A</option>
                 </select>
                 <input type="text" name="role1-skill1" placeholder="Top tech skill">
@@ -245,12 +203,24 @@
                 <select name="role2" id="role2">
                     <option value="Front-end">Front-end Developer</option>
                     <option value="Back-end">Back-end Developer</option>
-                    <option value="Software">Software Developer</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Full-stack">Full-stack Developer</option>
+                    <option value="Data-vis">Data Visualization</option>
+                    <option value="Data-analysis">Data Analysis</option>
                     <option value="Cyber Security">Cyber Security</option>
                     <option value="Motion Designer">Motion Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="UI-UX">UI/UX Designer</option>
+                    <option value="Video-shooting">Video Shooting</option>
+                    <option value="Video-editing">Video Editing</option>
+                    <option value="Audio-engineer">Audio Engineer</option>
+                    <option value="Marketing-specialist">Marketing Specialist</option>
+                    <option value="3D-creator">3D asset creator</option>
+                    <option value="Artists">Artists</option>
                     <option value="Project Manager">Project Manager</option>
-                    <option value="Marketing specialist">Marketing Specialist</option>
+                    <option value="other">Other1</option>
+                    <option value="other">Other2</option>
+                    <option value="other">Other3</option>
                     <option value="NA">N/A</option>
                 </select>
                 <input type="text" name="role2-skill1" placeholder="Top tech skill">
@@ -260,12 +230,24 @@
                 <select name="role3" id="role3">
                     <option value="Front-end">Front-end Developer</option>
                     <option value="Back-end">Back-end Developer</option>
-                    <option value="Software">Software Developer</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Full-stack">Full-stack Developer</option>
+                    <option value="Data-vis">Data Visualization</option>
+                    <option value="Data-analysis">Data Analysis</option>
                     <option value="Cyber Security">Cyber Security</option>
                     <option value="Motion Designer">Motion Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="UI-UX">UI/UX Designer</option>
+                    <option value="Video-shooting">Video Shooting</option>
+                    <option value="Video-editing">Video Editing</option>
+                    <option value="Audio-engineer">Audio Engineer</option>
+                    <option value="Marketing-specialist">Marketing Specialist</option>
+                    <option value="3D-creator">3D asset creator</option>
+                    <option value="Artists">Artists</option>
                     <option value="Project Manager">Project Manager</option>
-                    <option value="Marketing specialist">Marketing Specialist</option>
+                    <option value="other">Other1</option>
+                    <option value="other">Other2</option>
+                    <option value="other">Other3</option>
                     <option value="NA">N/A</option>
                 </select>
                 <input type="text" name="role3-skill1" placeholder="Top tech skill">
@@ -275,12 +257,24 @@
                 <select name="role4" id="role4">
                     <option value="Front-end">Front-end Developer</option>
                     <option value="Back-end">Back-end Developer</option>
-                    <option value="Software">Software Developer</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Full-stack">Full-stack Developer</option>
+                    <option value="Data-vis">Data Visualization</option>
+                    <option value="Data-analysis">Data Analysis</option>
                     <option value="Cyber Security">Cyber Security</option>
                     <option value="Motion Designer">Motion Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="UI-UX">UI/UX Designer</option>
+                    <option value="Video-shooting">Video Shooting</option>
+                    <option value="Video-editing">Video Editing</option>
+                    <option value="Audio-engineer">Audio Engineer</option>
+                    <option value="Marketing-specialist">Marketing Specialist</option>
+                    <option value="3D-creator">3D asset creator</option>
+                    <option value="Artists">Artists</option>
                     <option value="Project Manager">Project Manager</option>
-                    <option value="Marketing specialist">Marketing Specialist</option>
+                    <option value="other">Other1</option>
+                    <option value="other">Other2</option>
+                    <option value="other">Other3</option>
                     <option value="NA">N/A</option>
                 </select>
                 <input type="text" name="role4-skill1" placeholder="Top tech skill">
@@ -290,12 +284,24 @@
                 <select name="role5" id="role5">
                     <option value="Front-end">Front-end Developer</option>
                     <option value="Back-end">Back-end Developer</option>
-                    <option value="Software">Software Developer</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Full-stack">Full-stack Developer</option>
+                    <option value="Data-vis">Data Visualization</option>
+                    <option value="Data-analysis">Data Analysis</option>
                     <option value="Cyber Security">Cyber Security</option>
                     <option value="Motion Designer">Motion Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="UI-UX">UI/UX Designer</option>
+                    <option value="Video-shooting">Video Shooting</option>
+                    <option value="Video-editing">Video Editing</option>
+                    <option value="Audio-engineer">Audio Engineer</option>
+                    <option value="Marketing-specialist">Marketing Specialist</option>
+                    <option value="3D-creator">3D asset creator</option>
+                    <option value="Artists">Artists</option>
                     <option value="Project Manager">Project Manager</option>
-                    <option value="Marketing specialist">Marketing Specialist</option>
+                    <option value="other">Other1</option>
+                    <option value="other">Other2</option>
+                    <option value="other">Other3</option>
                     <option value="NA">N/A</option>
                 </select>
                 <input type="text" name="role5-skill1" placeholder="Top tech skill">
@@ -305,12 +311,24 @@
                 <select name="role6" id="role6">
                     <option value="Front-end">Front-end Developer</option>
                     <option value="Back-end">Back-end Developer</option>
-                    <option value="Software">Software Developer</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Full-stack">Full-stack Developer</option>
+                    <option value="Data-vis">Data Visualization</option>
+                    <option value="Data-analysis">Data Analysis</option>
                     <option value="Cyber Security">Cyber Security</option>
                     <option value="Motion Designer">Motion Designer</option>
                     <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="UI-UX">UI/UX Designer</option>
+                    <option value="Video-shooting">Video Shooting</option>
+                    <option value="Video-editing">Video Editing</option>
+                    <option value="Audio-engineer">Audio Engineer</option>
+                    <option value="Marketing-specialist">Marketing Specialist</option>
+                    <option value="3D-creator">3D asset creator</option>
+                    <option value="Artists">Artists</option>
                     <option value="Project Manager">Project Manager</option>
-                    <option value="Marketing specialist">Marketing Specialist</option>
+                    <option value="other">Other1</option>
+                    <option value="other">Other2</option>
+                    <option value="other">Other3</option>
                     <option value="NA">N/A</option>
                 </select>
                 <input type="text" name="role6-skill1" placeholder="Top tech skill">
