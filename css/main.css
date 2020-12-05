@@ -1,15 +1,14 @@
 .hidden {
-  display: none; }
+  display: none;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
 .strong {
-  font-weight: bold; }
-
-  ol li {
-    list-style-type: none;
-  }
+  font-weight: bold;
+}
 
 main {
   display: flex;
@@ -18,34 +17,42 @@ main {
   max-width: 70%;
   align-items: center;
   justify-content: center;
-  margin: 5% auto; }
+  margin: 5% auto;
+}
 
 .rangeResponse {
   max-width: 100%;
   display: flex;
-  align-items: stretch; }
+  align-items: stretch;
+}
 
 .response {
-  display: inline; }
+  display: inline;
+}
 
 .hint {
-  font-style: italic; }
+  font-style: italic;
+}
 
 sup {
   color: grey;
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-left: -3px;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
 .preLockDown {
   border-bottom: 0.5px grey dotted;
-  display: inline; }
+  display: inline;
+}
 
 .preLockDown .tooltip {
-  position: absolute; }
+  position: absolute;
+}
 
 .preLockDown:hover .tooltip {
-  display: block; }
+  display: block;
+}
 
 .tooltip {
   display: none;
@@ -55,18 +62,26 @@ sup {
   z-index: 1;
   position: absolute;
   margin-top: 20px;
-  margin-left: -15%; }
+  margin-left: -15%;
+}
 
 .form-container br {
   margin-top: 10px;
   background-color: yellow;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .more-margin {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .form-text {
-  padding: 15px; }
+  padding: 15px;
+}
+
+#cdesc {
+  width: 300px;
+}
 
 /*# sourceMappingURL=main.css.map */
