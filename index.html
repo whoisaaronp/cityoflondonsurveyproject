@@ -219,6 +219,8 @@
                 <input type="text" name="softskill2" placeholder="Second top soft skill"><br>
                 <input type="text" name="softskill3" placeholder="Third top soft skill"><br>
             </section>
+            <br>
+            <textarea class="form-text" name="q2_1_notes" id="q2_1_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
 
             <!-- Cadence-->
             <section id="technicalskills">
@@ -314,6 +316,8 @@
                 <input type="text" name="role6-skill1" placeholder="Top tech skill">
                 <input type="text" name="role6-skill2" placeholder="Second top tech skill">
                 <input type="text" name="role6-skill3" placeholder="Third top tech skill"><br>
+  
+                <br><textarea class="form-text" name="q2_2_notes" id="q2_2_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
             </section>
     
             <!-- Cindys Questions 1 & 2 -->
@@ -345,6 +349,8 @@
                     <div>
                     <input type="radio" id="q1o7" name="q1" value="500">
                     <label for="q1o7">500 or More</label></div>
+                
+                    <br><textarea class="form-text" name="q3_notes" id="q3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                 </div>
 
                 <br><hr>
@@ -364,6 +370,8 @@
                     <label for="q1o6">75 - 100%</label><br>
                     <input type="radio" id="q2o7" name="q2" value="100">
                     <label for="q1o7">Greater than 100%</label>
+                
+                    <br><br><textarea class="form-text" name="q4_notes" id="q4_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                 </div>
 
             </section>
@@ -404,19 +412,6 @@
             <div class="rangeResponse">
                 <p>Increase in staffing: </p>
                 <input type="range" value="0" id="q1" name="q1" list="percentages" class="question">
-                <datalist id="percentages">
-                    <option value="0"></option>
-                    <option value="10"></option>
-                    <option value="20"></option>
-                    <option value="30"></option>
-                    <option value="40"></option>
-                    <option value="50"></option>
-                    <option value="60"></option>
-                    <option value="70"></option>
-                    <option value="80"></option>
-                    <option value="90"></option>
-                    <option value="100"></option>
-                </datalist>
                 <p class="q1_response response">%</p>
             </div>
             <div class="rangeResponse">
@@ -437,7 +432,8 @@
                 </datalist>
                 <p class="q1_response response">%</p>
             </div>
-
+            <textarea class="form-text" name="q6_notes" id="q6_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
+            <br>
             <hr>
             <h2>7. Change in Job Demands and Hires</h2>
             <!-- <ol> -->
@@ -767,6 +763,7 @@
                     <input type="radio" id="No" name="yn7" value="No">
                     <label for="No">No</label>
                 </div>
+                <br><textarea class="form-text" name="q8_1_notes" id="q8_1_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
 
                 <div>
                     <p class="subQuestions"> 8.2  If you answered Yes, Where are they located?</p>
@@ -788,6 +785,7 @@
                     <label for="province">Province</label>
                     <input type="text" id="province" name="province" placeholder="ON"><br>
                     
+                    <br><textarea class="form-text" name="q8_2_notes" id="q8_2_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                 </div>
 
                 <div>
@@ -800,6 +798,7 @@
                         <input type="radio" id="No" name="yn702" value="No">
                         <label for="No">No</label>
                     </div>
+                    <br><textarea class="form-text" name="q8_3_notes" id="q8_3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                 </div>
 
                 <div>
@@ -816,6 +815,7 @@
                         <input type="radio" id="expan3" name="expan" value="over3year">
                         <label for="expan3">Over 3 years</label>
                     </div>
+                    <br><textarea class="form-text" name="q8_4_notes" id="q8_4_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea>
                 </div>
                 <br><hr>
                 <div>
@@ -825,18 +825,21 @@
                         <input type="range" value="0" id="q9.1" name="q9.1" list="percentages" class="question">
                         <p class="q1_response response">%</p>
                     </div>
+                    <textarea class="form-text" name="q9_1_notes" id="q9_1_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea><br><br>
 
                     <label for="q9.2">9.2  What percentage of your skilled professionals are from outside London, but within Canada ?</label>
                     <div class="rangeResponse">
                         <input type="range" value="0" id="q9.2" name="q9.2" list="percentages" class="question">
                         <p class="q1_response response">%</p>
                     </div>
+                    <textarea class="form-text" name="q9_2_notes" id="q9_2_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea><br><br>
 
                     <label for="q9.3">9.3  What percentage of your skilled professionals are from other countries ?</label>
                     <div class="rangeResponse">
                         <input type="range" value="0" id="q9.3" name="q9.3" list="percentages" class="question">
                         <p class="q1_response response">%</p>
                     </div>
+                    <textarea class="form-text" name="q9_3_notes" id="q9_3_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea><br><br>
 
                     <label for="q9_4">9.4  What institutions are your early graduates coming from ?</label>
                     <!-- <input type="text" id="uni_col" name="uni_col" placeholder="University/College"> -->
@@ -886,6 +889,8 @@
                     <option>Cybersecurity</option>
                     <option>Cloud Computing</option>
                 </select>
+                <br><br><textarea class="form-text" name="q10_1_notes" id="q10_1_notes" cols="100" rows="2" placeholder="Additional notes/comments, if any"></textarea><br>
+
                 <p>10.2  What skill sets should professionals have and/or look to obtain, to leverage these opportunities? List them, and then rank the top 3 most important.</p>
                 <div class="form-group">
                     <label for="sel2">Mutiple select list (hold shift to select more than one and Command for individual
@@ -902,6 +907,7 @@
                         <option>Cloud Computing</option>
                     </select>
                 </div>
+
             </div>
             <label for="q9_notes" class="hidden">additional notes</label>
             <div class="more-margin">
