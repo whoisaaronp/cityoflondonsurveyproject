@@ -84,4 +84,15 @@ sup {
   width: 300px;
 }
 
+datalist option:before {
+  content: "";
+  visibility: visible;
+  display: block;
+  width: 15px;
+  height: auto;
+  padding-left: 3px;
+  text-indent: 0;
+  padding: 90px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -80,3 +80,15 @@ sup {
 #cdesc {
     width: 300px;
 }
+
+// styling datalist options to show labels https://codepen.io/anysom/pen/ZgQobg
+datalist option:before {
+    content: '';
+    visibility: visible;
+    display: block;
+    width: 15px;
+    height: auto;
+    padding-left: 3px;
+    text-indent: 0;
+    padding: 90px;
+}
